@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no">
+  <meta name="description" content="Suha - Multipurpose Ecommerce Mobile HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#100DD1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- The above tags *must* come first in the head, any other head content must come *after* these tags-->
+  <!-- Title-->
+  <title>Selamat datang di toko RaflyKun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+    rel="stylesheet">
+  <!-- Favicon-->
+  <link rel="icon" href="img/icons/icon-72x72.png">
+  <!-- Apple Touch Icon-->
+  <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+  <!-- CSS Libraries-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/lineicons.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Stylesheet-->
+  <link rel="stylesheet" href="style.css">
+  <!-- Web App Manifest-->
+  <link rel="manifest" href="manifest.json">
+  <!-- Custom Style -->
+  <style>
+    .header-shop {
+      height: 200px;
+    }
+
+    .mise-desc {
+      margin-left: 30px;
+      height: 130px;
+    }
+
+    .mise-btn {
+      width: 190px;
+      height: 35px;
+    }
+
+    .mise-btn a img {
+      margin-right: 10px;
+    }
+
+    .analyst div,
+    .analyst span {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .analyst div img {
+      margin: 0;
+      margin-right: 10px;
+    }
+
+    .location {
+      margin-left: 10px;
+    }
+
+    .location-wrapper {
+      height: 130px;
+    }
+
+    
+    @media only screen and (max-width: 767px) {
+      .page-content-wrapper {
+        margin-top: 80px !important;
+      }
+
+      .disappeared {
+        display: none !important;
+      }
+
+      .main-pic {
+        width: 100%;
+        margin: auto !important;
+        height: 150px;
+      }
+
+      .shop {
+        background-color: #dddddd;
+      }
+
+      .header-shop {
+        flex-direction: column;
+        height: 100%;
+        background-color: transparent !important;
+      }
+
+      .shop-profile {
+        height: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+      }
+
+      .shop-photo {
+        width: 100px;
+        margin-left: 0;
+      }
+
+      .mise-desc {
+        height: 70px;
+      }
+
+      .mise-desc span:nth-child(1) {
+        font-size: 18px;
+      }
+
+      .mise-desc span:nth-child(2) {
+        font-size: 12px;
+      }
+
+      .mise-btn {
+        width: 150px;
+      }
+
+      .location-wrapper {
+        align-items: center;
+        height: 50%;
+        margin-bottom: 20px !important;
+      }
+
+      .location-wrapper span:nth-child(1) {
+        font-size: 18px;
+      }
+
+      .location {
+        font-size: 12px;
+      }
+
+      .btn-gmaps {
+        width: 40%;
+        height: 30px;
+        margin-top: 5px;
+      }
+
+      .btn-gmaps img {
+        width: 16px;
+      }
+
+      .btn-gmaps span {
+        font-size: 12px;
+      }
+
+      .shop-desc {
+        flex-direction: column;
+      }
+
+      .rating {
+        margin-top: 20px !important;
+      }
+      .product-wrapper{
+      width: 50%;
+    }
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader-->
+  <div class="preloader" id="preloader">
+    <div class="spinner-grow text-secondary" role="status">
+      <div class="sr-only">Loading...</div>
+    </div>
+  </div>
+  <!-- Header Area-->
+  <div class="header-area shadow-sm" id="headerArea">
+    <div class="topbar w-100 bg-young-gray">
+      <div class="container d-flex justify-content-between align-items-center h-100">
+        <div class="topbar-menu wd-9 d-flex justify-content-between">
+          <img src="icons/SVG/Downloadapp.svg" width="13px"><a>Download App</a>
+        </div>
+        <div class="topbar-menu wd-30 d-flex justify-content-between ">
+          <a>TentangInginapa</a>
+          <a>InginMitra</a>
+          <a>InginJualan?</a>
+          <a>Promo</a>
+          <a>InginSentre</a>
+        </div>
+      </div>
+    </div>
+    <div class="headbar wd-90 hg-70 d-flex align-items-center justify-content-between mx-auto">
+      <!-- Back To home Button-->
+      <div class="logo-wrapper wd-10">
+        <a href="index.html"><img src="icons/SVG/logo-inginapa.svg" width="100px" /></a>
+      </div>
+      <button onclick="goBack()" class="back-arrow d-md-none bg-main-darker border-0">
+        <i class='bx bx-left-arrow-alt text-white fsi-26 mt-1'></i>
+    </button>
+      <form class="searching-bar border border-secondary rounded d-flex align-items-center" action="">
+        <a href="searching-bar.html" class="w-100 h-100"><input
+            class="bg-young-gray fsi-14 w-100 h-100 ps-5 pe-2 border-0" type="text"
+            placeholder="Cari sesuatu...." /></a>
+
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <!-- Navbar Toggler-->
+      <div class="toggler wd-10 h-100 d-flex align-items-center justify-content-around">
+        <div class="dropdown show">
+          <a class="btn btn-white p-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class='bx bxs-dashboard fsi-32 text-dark'></i>
+          </a>
+          <div class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="catagory.html">Elektronik</a>
+            <a class="dropdown-item" href="catagory.html">Buah dan Sayur</a>
+            <a class="dropdown-item" href="catagory.html">Otomotif</a>
+            <a class="dropdown-item" href="catagory.html">Kerajinan</a>
+          </div>
+        </div>
+        <a href="keranjang.html">
+          <i class='bx bxs-cart fsi-32 text-dark'></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- PWA Install Alert -->
+  <div class="toast pwa-install-alert shadow bg-white" role="alert" aria-live="assertive" aria-atomic="true"
+    data-bs-delay="10000" data-bs-autohide="true"></div>
+  <!-- Content -->
+  <div class="page-content-wrapper w-100 h-100 mx-auto">
+    <div class="container shop">
+      <div class="row">
+        <div class="header-shop bg-young-gray w-100 rounded d-flex align-items-center justify-content-between">
+          <div class="col-12 shop-profile d-flex align-items-center">
+            <img src="img/product/basotahurafly.jpg" width="140px" class="shop-photo ms-4 rounded-circle">
+            <div class="mise-desc d-flex flex-column justify-content-around">
+              <span class="fsi-20 color-gray fw-bold">Toko RaflyKun</span>
+              <span class="fsi-16 color-gray">Aktif 1 hari yang lalu</span>
+              <div class="mise-btn fsi-14 d-flex justify-content-between mt-2">
+                <a href="chat.html"
+                  class="wd-48 color-gray bg-soft-green fw-normal border-main d-flex justify-content-center align-items-center"><img
+                    src="icons/SVG/Chat.svg" width="18px" class="mt-1"><span>Chat</span></a>
+                <a href=""
+                  class="wd-48 color-gray bg-soft-green fw-normal border-main d-flex justify-content-center align-items-center"><img
+                    src="icons/SVG/Add.svg"><span>Ikuti</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-5">
+      <div class="row mt-4">
+        <div class="shop-desc d-flex justify-content-between">
+          <div class="col col-lg-7 fsi-14 d-flex flex-column">
+            <span class="text-dark mb-3 fsi-20 fw-bold">Deskripsi toko</span>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur officia quibusdam accusantium
+              nostrum mollitia ea libero. Excepturi sed odit temporibus vitae. Reiciendis harum dolores debitis fugiat
+              iure voluptate animi ullam.
+            </span>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur officia quibusdam accusantium
+              nostrum mollitia ea libero.
+            </span>
+          </div>
+          <div class="mt-4"></div>
+          <div class="col col-lg-4">
+            <span class="rating text-dark fsi-20 fw-bold">Rating toko</span>
+            <div class="analyst mt-3">
+              <div class="d-flex align-items-center">
+                <div class="wd-55"><img src="icons/SVG/Shop.svg">Banyak produk : <span class="color-main">100</span>
+                </div>
+                <div class="wd-45"><img src="icons/SVG/User+.svg">Pengikut : <span class="color-main">1000+</span></div>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="wd-55"><img src="icons/SVG/StarOtl.svg">Penilaian : <span class="color-main">4.8</span>
+                </div>
+                <div class="wd-45"><img src="icons/SVG/ChatRespond.svg">Respon chat : <span
+                    class="color-main">90%</span></div>
+              </div>
+              <div class="d-flex align-items-center">
+                <div><img src="icons/SVG/UserCheck.svg">Gabung jadi mitra sejak : <span class="color-main">2 tahun
+                    lalu</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h5 class="text-dark fw-bold mb-4">Produk di toko ini</h5>
+      <div class="d-flex flex-wrap">
+        <div class="product-wrapper wd-20 px-2 pb-3">
+          <div class="card product-card">
+            <div class="card-body border border-secondary rounded">
+              <a class="product-thumbnail d-block" href="single-product-edited.html"><img class="mb-2"
+                  src="img/product/basotahurafly.jpg" alt="" />
+              </a>
+              <a class="product-title d-block" href="single-product-edited.html">Baso kang rafly</a>
+              <p class="sale-price text-dark">Rp. 15.000</p>
+              <!-- Rating -->
+              <div class="product-rating">
+                <span><i class="lni lni-star-filled"></i> <span style="color: #555555;">4.0 | Sumedang</span></span>
+              </div>
+              <!-- Add to Cart -->
+            </div>
+          </div>
+        </div>
+        <div class="product-wrapper wd-20 px-2 pb-3">
+          <div class="card product-card">
+            <div class="card-body border border-secondary rounded">
+              <a class="product-thumbnail d-block" href="single-product-edited.html"><img class="mb-2"
+                  src="img/product/basotahurafly.jpg" alt="" />
+              </a>
+              <a class="product-title d-block" href="single-product-edited.html">Baso kang rafly</a>
+              <p class="sale-price text-dark">Rp. 15.000</p>
+              <!-- Rating -->
+              <div class="product-rating">
+                <span><i class="lni lni-star-filled"></i> <span style="color: #555555;">4.0 | Sumedang</span></span>
+              </div>
+              <!-- Add to Cart -->
+            </div>
+          </div>
+        </div>
+        <div class="product-wrapper wd-20 px-2 pb-3">
+          <div class="card product-card">
+            <div class="card-body border border-secondary rounded">
+              <a class="product-thumbnail d-block" href="single-product-edited.html"><img class="mb-2"
+                  src="img/product/basotahurafly.jpg" alt="" />
+              </a>
+              <a class="product-title d-block" href="single-product-edited.html">Baso kang rafly</a>
+              <p class="sale-price text-dark">Rp. 15.000</p>
+              <!-- Rating -->
+              <div class="product-rating">
+                <span><i class="lni lni-star-filled"></i> <span style="color: #555555;">4.0 | Sumedang</span></span>
+              </div>
+              <!-- Add to Cart -->
+            </div>
+          </div>
+        </div>
+        <div class="product-wrapper wd-20 px-2 pb-3">
+          <div class="card product-card">
+            <div class="card-body border border-secondary rounded">
+              <a class="product-thumbnail d-block" href="single-product-edited.html"><img class="mb-2"
+                  src="img/product/basotahurafly.jpg" alt="" />
+              </a>
+              <a class="product-title d-block" href="single-product-edited.html">Baso kang rafly</a>
+              <p class="sale-price text-dark">Rp. 15.000</p>
+              <!-- Rating -->
+              <div class="product-rating">
+                <span><i class="lni lni-star-filled"></i> <span style="color: #555555;">4.0 | Sumedang</span></span>
+              </div>
+              <!-- Add to Cart -->
+            </div>
+          </div>
+        </div>
+        <div class="product-wrapper wd-20 px-2 pb-3">
+          <div class="card product-card">
+            <div class="card-body border border-secondary rounded">
+              <a class="product-thumbnail d-block" href="single-product-edited.html"><img class="mb-2"
+                  src="img/product/basotahurafly.jpg" alt="" />
+              </a>
+              <a class="product-title d-block" href="single-product-edited.html">Baso kang rafly</a>
+              <p class="sale-price text-dark">Rp. 15.000</p>
+              <!-- Rating -->
+              <div class="product-rating">
+                <span><i class="lni lni-star-filled"></i> <span style="color: #555555;">4.0 | Sumedang</span></span>
+              </div>
+              <!-- Add to Cart -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- /Content -->
+  <!-- Internet Connection Status-->
+  <div class="internet-connection-status" id="internetStatus"></div>
+  <!-- Footer Nav-->
+  <div class="footer-nav-area" id="footerNav">
+    <div class="container h-100 px-0">
+      <div class="suha-footer-nav h-100 mx-auto">
+        <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+          <li>
+            <a class="d-flex flex-column" href="index.html"><i class='bx bx-home fsi-28'></i><span>Beranda</span></a>
+          </li>
+          <li>
+            <a class="d-flex flex-column" href="index.html"><i class='bx bxs-news fsi-28'></i></i><span>Berita</span></a>
+          </li>
+          <li>
+            <a class="d-flex flex-column" href="chat.html"><i
+                class='bx bx-conversation fsi-28'></i><span>Pesan</span></a>
+          </li>
+          <li>
+            <a class="d-flex flex-column" href="notify.html"><i class='bx bx-bell fsi-28'></i><span>Notifikasi</span></a>
+          </li>
+          <li>
+            <a class="d-flex flex-column" href="profile-edit-form.html"><i
+                class='bx bx-user-circle fsi-28'></i><span>Akun</span></a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- All JavaScript Files-->
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.passwordstrength.js"></script>
+  <script src="js/dark-mode-switch.js"></script>
+  <script src="js/no-internet.js"></script>
+  <script src="js/active.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no" />
+  <meta name="description" content="Suha - Multipurpose Ecommerce Mobile HTML Template" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="theme-color" content="#00a859" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <!-- The above tags *must* come first in the head, any other head content must come *after* these tags-->
+  <!-- Title-->
+  <title>InginApa Indonesia - Platform Jual Beli Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Favicon-->
+  <link rel="icon" href="img/icons/icon-72x72.png" />
+  <!-- Apple Touch Icon-->
+  <link rel="apple-touch-icon" href="img/icons/icon-96x96.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png" />
+  <!-- CSS Libraries-->
+  <link rel="stylesheet" href="css/bootstrap.min.css?v=1" />
+  <link rel="stylesheet" href="css/animate.css?v=1" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css?v=1" />
+  <link rel="stylesheet" href="css/font-awesome.min.css?v=1" />
+  <link rel="stylesheet" href="css/lineicons.min.css?v=1" />
+  <link rel="stylesheet" href="css/magnific-popup.css?v=1" />
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Stylesheet-->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Web App Manifest-->
+  <link rel="manifest" href="manifest.json" />
+  <!-- Custom style -->
+  <style>
+    .side-menu {
+      height: 100%;
+    }
+
+    .side-menu a {
+      padding-bottom: 20px;
+    }
+
+    .user-data-form .form-control {
+      height: 45px;
+    }
+
+    .bank-account,
+    .address-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bank-account-wrapper, .address-wrapper {
+      width: 33.33%;
+      padding: 15px;
+    }
+
+    .add-form .form-control {
+      height: 40px !important;
+    }
+
+    .bx-trash {
+      margin-left: 5px;
+      margin-bottom: 5px;
+    }
+
+    @media only screen and (max-width: 743px) {
+      .page-content-wrapper {
+        margin-top: 90px !important;
+        margin-bottom: 80px !important;
+      }
+
+      .profile-edit {
+        flex-direction: column;
+      }
+
+      .side-menu {
+        flex-direction: row !important;
+        width: 95%;
+        height: 100%;
+      }
+
+      .bank-account-wrapper, .address-wrapper{
+        width: 100%;
+        flex-direction: row !important;
+        align-items: center;
+        padding: 10px !important;
+      }
+
+      .main {
+        width: 95%;
+        margin: 0 auto;
+      }
+
+      .side-menu a {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn-edit-delete {
+        flex-direction: column;
+        margin-top: 0px !important;
+      }
+
+      .bx-trash {
+        margin-left: 0px !important;
+        margin-bottom: 0px !important;
+      }
+
+      .bank-info,
+      .address-info {
+        height: 100%;
+      }
+
+      .bank-account,
+      .address-list {
+        width: 100%;
+      }
+
+      .space {
+        margin-top: 15px;
+      }
+
+      .disappeared {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader-->
+  <div class="preloader" id="preloader">
+    <div class="spinner-grow text-secondary" role="status">
+      <div class="sr-only">Loading...</div>
+    </div>
+  </div>
+
+  <!-- Header Area-->
+  <div class="header-area shadow-sm" id="headerArea">
+    <div class="topbar w-100 bg-young-gray">
+      <div class="container d-flex justify-content-between align-items-center h-100">
+        <div class="topbar-menu wd-9 d-flex justify-content-between">
+          <img src="icons/SVG/Downloadapp.svg" width="13px"><a>Download App</a>
+        </div>
+        <div class="topbar-menu wd-30 d-flex justify-content-between ">
+          <a>TentangInginapa</a>
+          <a>InginMitra</a>
+          <a>InginJualan?</a>
+          <a>Promo</a>
+          <a>InginSentre</a>
+        </div>
+      </div>
+    </div>
+    <div class="headbar wd-90 hg-70 d-flex align-items-center justify-content-between mx-auto">
+      <!-- Back To home Button-->
+      <div class="logo-wrapper wd-10">
+        <a href="index.html"><img src="icons/SVG/logo-inginapa.svg" width="100px" /></a>
+      </div>
+      <button onclick="goBack()" class="back-arrow d-md-none bg-main-darker border-0">
+        <i class='bx bx-left-arrow-alt text-white fsi-26 mt-1'></i>
+    </button>
+      <form class="searching-bar border border-secondary rounded d-flex align-items-center" action="">
+        <input class="bg-young-gray fsi-14 w-100 h-100 ps-5 pe-2 border-0" type="text" placeholder="Cari sesuatu...." />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <!-- Navbar Toggler-->
+      <div class="toggler wd-10 h-100 d-flex align-items-center justify-content-around">
+        <div class="dropdown show">
+          <a class="btn btn-white p-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class='bx bxs-dashboard fsi-32 text-dark'></i>
+          </a>
+          <div class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="catagory.html">Elektronik</a>
+            <a class="dropdown-item" href="catagory.html">Buah dan Sayur</a>
+            <a class="dropdown-item" href="catagory.html">Otomotif</a>
+            <a class="dropdown-item" href="catagory.html">Kerajinan</a>
+          </div>
+        </div>
+        <a href="keranjang.html">
+          <i class='bx bxs-cart fsi-32 text-dark'></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- PWA Install Alert -->
+  <div class="toast pwa-install-alert shadow bg-white" role="alert" aria-live="assertive" aria-atomic="true"
+    data-bs-delay="10000" data-bs-autohide="true"></div>
+  <!-- Content -->
+  <div class="page-content-wrapper">
+    <div class="container">
+      <div class="profile-edit d-flex">
+        <!-- Side menu -->
+        <div class="side-menu wd-15 d-flex flex-column justify-content-between mt-2">
+          <a href="#" class="d-flex align-items-center"><i class='bx bx-user color-main fsi-26' disabled></i><span
+              class="fsi-14 ms-2 color-main-darker">Profil saya</span></a>
+          <a href="seller-categories.html" class="d-flex align-items-center"><i
+              class='bx bxs-user-badge color-main fsi-26' disabled></i><span class="fsi-14 ms-2 color-gray">Jadi
+              Seller</span></a>
+          <a href="transaction-list.html" class="d-flex align-items-center"><i
+              class='bx bx-cart-add color-main fsi-26'></i><span class="fsi-14 ms-2 color-gray">Pesanan saya</span></a>
+          <a href="setting-edit-form.html" class="d-flex align-items-center"><i
+              class='bx bx-slider color-main fsi-26'></i><span class="fsi-14 ms-2 color-gray">Setting</span></a>
+          <a href="login-form.html" class="d-flex align-items-center disappeared"><i
+              class='bx bx-log-out color-main fsi-26'></i><span class="fsi-14 ms-2 color-gray">Log-out</span></a>
+        </div>
+        <!-- Profil -->
+        <div class="main wd-70 d-flex flex-column">
+          <!-- Edit data profil -->
+          <span class="fsi-20 text-dark fw-bold">Profil saya</span>
+          <span class="fsi-14 mt-1">Kelola akun dan data pribadi mu di halaman ini</span>
+          <form action="" class="user-data-form mt-4 mb-5">
+            <div class="d-flex flex-column">
+              <label for="username" class="fsi-14 color-soft-gray">Username</label>
+              <input type="text" name="username" class="form-control mt-2" value="salieri" disabled>
+            </div>
+            <div class="d-flex flex-column mt-3">
+              <label for="name" class="fsi-14 color-soft-gray">Nama lengkap</label>
+              <input type="text" name="name" class="form-control mt-2" value="Ahmad Hidayat">
+            </div>
+            <div class="d-flex flex-column mt-3">
+              <label for="email" class="fsi-14 color-soft-gray">Email</label>
+              <input type="text" name="email" class="form-control mt-2" value="ahmadhdyt@inginapa.co">
+            </div>
+            <div class="d-flex flex-column mt-3">
+              <label for="nope" class="fsi-14 color-soft-gray">Nomor telepon</label>
+              <input type="text" name="nope" class="form-control mt-2" value="087732377034">
+            </div>
+            <div class="d-flex flex-column mt-3">
+              <label for="shopname" class="fsi-14 color-soft-gray">Nama toko</label>
+              <input type="text" name="shopname" class="form-control mt-2 bg-young-gray" disabled
+                value="belum punya toko">
+            </div>
+            <div class="d-flex flex-column mt-3">
+              <label for="birthdate" class="fsi-14 color-soft-gray">Tanggal lahir</label>
+              <input type="date" name="birthdate" class="form-control wd-60 mt-2">
+            </div>
+            <div class="d-flex flex-column mt-3">
+              <label for="gender" class="fsi-14 color-soft-gray">Jenis kelamin</label>
+              <select name="gender" class="form-control wd-60 mt-2">
+                <option value="-">-</option>
+                <option value="?">memilih untuk tidak memberitahu</option>
+                <option value="L">laki-laki</option>
+                <option value="P">perempuan</option>
+              </select>
+            </div>
+            <button type="submit"
+              class="btn btn-lg bg-main mt-4 text-white text-center border-0 rounded fsi-16 fw-semibold">Simpan
+              perubahan</button>
+          </form>
+          <!-- Data bank -->
+          <div class="d-flex flex-column mb-5">
+            <span class="fsi-20 text-dark fw-bold">Bank saya</span>
+            <span class="fsi-14 mt-1">Tambah dan kelola bank dan metode pembayaran mu di sini.</span>
+            <form action="">
+              <button type="button" data-toggle="modal" data-target="#addBank"
+                class="btn btn-lg bg-main mt-4 text-white text-center border-0 rounded fsi-16 fw-semibold">Tambah
+                bank</button>
+              <div class="d-flex flex-wrap w-100 mt-3 p-2 border shadow-sm rounded">
+                <!-- bank account -->
+                <div class="bank-account-wrapper h-100 d-flex flex-column">
+                  <div class="bank-account">
+                    <!-- bank name -->
+                    <div class="d-flex align-items-center">
+                      <img src="img/icons/logo-neo.png" width="25px">
+                      <span class="fsi-16 ms-2 color-gray fw-bold">Bank Neo Commerce</span>
+                    </div>
+                    <!-- norek -->
+                    <div class="d-flex align-items-center mt-2">
+                      <span class="fsi-14 color-gray">Rekening :</span>
+                      <span class="fsi-14 ms-1 color-gray">14472847843843</span>
+                    </div>
+                  </div>
+                  <!-- button edit delete -->
+                  <div class="btn-edit-delete d-flex mt-2">
+                    <button type="button" data-toggle="modal" data-target="#editBank" class="border-0 bg-white">
+                      <i class='bx bx-edit fsi-24 color-main-darker'></i>
+                    </button>
+                    <button type="button" data-toggle="modal" data-target="#deleteConfirm" class="border-0 bg-white">
+                      <i class='bx bx-trash fsi-24 color-red'></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- end bank account -->
+                <!-- bank account -->
+                <div class="bank-account-wrapper h-100 d-flex flex-column">
+                  <div class="bank-account">
+                    <!-- bank name -->
+                    <div class="d-flex align-items-center">
+                      <img src="img/icons/logo-bca.png" width="25px">
+                      <span class="fsi-16 ms-2 color-gray fw-bold">Bank BCA </span>
+                    </div>
+                    <!-- norek -->
+                    <div class="d-flex align-items-center mt-2">
+                      <span class="fsi-14 color-gray">Rekening :</span>
+                      <span class="fsi-14 ms-1 color-gray">14472843</span>
+                    </div>
+                  </div>
+                  <!-- button edit delete -->
+                  <div class="btn-edit-delete d-flex mt-2">
+                    <button type="button" data-toggle="modal" data-target="#editBank" class="border-0 bg-white">
+                      <i class='bx bx-edit fsi-24 color-main-darker'></i>
+                    </button>
+                    <button type="button" data-toggle="modal" data-target="#deleteConfirm" class="border-0 bg-white">
+                      <i class='bx bx-trash fsi-24 color-red'></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- end bank account -->
+                <!-- bank account -->
+                <div class="bank-account-wrapper h-100 d-flex flex-column">
+                  <div class="bank-account">
+                    <!-- bank name -->
+                    <div class="d-flex align-items-center">
+                      <img src="img/icons/logo-neo.png" width="25px">
+                      <span class="fsi-16 ms-2 color-gray fw-bold">Bank Neo Commerce</span>
+                    </div>
+                    <!-- norek -->
+                    <div class="d-flex align-items-center mt-2">
+                      <span class="fsi-14 color-gray">Rekening :</span>
+                      <span class="fsi-14 ms-1 color-gray">1447284784323443</span>
+                    </div>
+                  </div>
+                  <!-- button edit delete -->
+                  <div class="btn-edit-delete d-flex mt-2">
+                    <button type="button" data-toggle="modal" data-target="#editBank" class="border-0 bg-white">
+                      <i class='bx bx-edit fsi-24 color-main-darker'></i>
+                    </button>
+                    <button type="button" data-toggle="modal" data-target="#deleteConfirm" class="border-0 bg-white">
+                      <i class='bx bx-trash fsi-24 color-red'></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- end bank account -->
+              </div>
+
+            </form>
+          </div>
+          <!-- Alamat -->
+          <div class="d-flex flex-column">
+            <span class="fsi-20 text-dark fw-bold">Alamat saya</span>
+            <span class="fsi-14 mt-1">Tambah dan kelola alamatmu disini.</span>
+            <form action="">
+              <button type="button" data-toggle="modal" data-target="#addAddress"
+                class="btn btn-lg bg-main mt-4 text-white text-center border-0 rounded fsi-16 fw-semibold">Tambah
+                alamat</button>
+              <div class="d-flex flex-wrap w-100 mt-3 p-2 border shadow-sm rounded">
+                <div class="address-wrapper d-flex flex-column">
+                  <div class="address-list">
+                    <div class="d-flex align-items-center"><i class='bx bx-map-pin fsi-18 color-main-darker'></i><span
+                        class="fsi-16 color-gray fw-bold ms-2">Alamat utama</span></div>
+                    <span class="fsi-14 color-gray mt-2">Jl. Raya Rancakalong, Rt.03/Rw.07, Nagarawangi, Rancakalong,
+                      Sumedang</span>
+                  </div>
+                  <!-- button edit delete -->
+                  <div class="btn-edit-delete d-flex mt-2">
+                    <button type="button" data-toggle="modal" data-target="#editAddress" class="border-0 bg-white">
+                      <i class='bx bx-edit fsi-24 color-main-darker'></i>
+                    </button>
+                    <button type="button" data-toggle="modal" data-target="#deleteConfirmAddress" class="border-0 bg-white">
+                      <i class='bx bx-trash fsi-24 color-red'></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="address-wrapper d-flex flex-column">
+                  <div class="address-list">
+                    <div class="d-flex align-items-center"><i class='bx bx-map-pin fsi-18 color-main-darker'></i><span
+                        class="fsi-16 color-gray fw-bold ms-2">Alamat rumah</span></div>
+                    <span class="fsi-14 color-gray mt-2">Jl. Raya Rancakalong, Rt.03/Rw.07, Nagarawangi, Rancakalong,
+                      Sumedang</span>
+                  </div>
+                  <!-- button edit delete -->
+                  <div class="btn-edit-delete d-flex mt-2">
+                    <button type="button" data-toggle="modal" data-target="#editaddress" class="border-0 bg-white">
+                      <i class='bx bx-edit fsi-24 color-main-darker'></i>
+                    </button>
+                    <button type="button" data-toggle="modal" data-target="#deleteConfirmAddress" class="border-0 bg-white">
+                      <i class='bx bx-trash fsi-24 color-red'></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="address-wrapper d-flex flex-column justify-content-between">
+                  <div class="address-list">
+                    <div class="d-flex align-items-center">
+                      <i class='bx bxs-business fsi-18 color-main-darker'></i><span
+                        class="fsi-16 color-gray fw-bold ms-2">Alamat kantor</span>
+                    </div>
+                    <span class="fsi-14 color-gray mt-2">Perum Dano permai 02, Gg. Jalan buntu</span>
+                  </div>
+                  <!-- button edit delete -->
+                  <div class="btn-edit-delete d-flex mt-2">
+                    <button type="button" data-toggle="modal" data-target="#editAddress" class="border-0 bg-white">
+                      <i class='bx bx-edit fsi-24 color-main-darker'></i>
+                    </button>
+                    <button type="button" data-toggle="modal" data-target="#deleteConfirmAddress" class="border-0 bg-white">
+                      <i class='bx bx-trash fsi-24 color-red'></i>
+                    </button>
+                  </div>
+                </div>           
+              </div>
+            </form>
+          </div>
+          <!-- end alamat -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Content -->
+  <!-- PMM Persatuan Modal Modal -->
+  <!-- Modal edit -->
+  <div class="modal fade" id="editBank" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0 d-flex flex-column">
+          <div class="d-flex wd-95 mx-auto justify-content-between align-items-center">
+            <h5 class="modal-title fw-bold fsi-20" id="exampleModalLongTitle">Edit rekening</h5>
+            <button type="button" class="close border-0 bg-white" data-dismiss="modal" aria-label="Close">
+              <i class='bx bx-x-circle fsi-30 color-red'></i>
+            </button>
+          </div>
+          <div class="d-flex flex-wrap wd-95 mt-1">
+            <span class="fsi-14 wd-90 color-gray">Kamu bisa ganti bank dan edit nomor rekeningmu disini</span>
+          </div>
+        </div>
+        <div class="modal-body wd-95 mx-auto">
+          <div class="modal-form">
+            <!-- Form edit bank -->
+            <form action="">
+              <div class="add-form">
+                <div>
+                  <label for="select-bank" class="text-dark mb-2">Pilih bank</label>
+                  <select name="select-bank" id="select-bank" class="form-control mb-3">
+                    <option value="Neo Commerce">Bank Neo Commerce</option>
+                    <option value="Gopay">Gopay</option>
+                    <option value="Dana">Dana</option>
+                    <option value="Ovo">Ovo</option>
+                    <option value="Neo Commerce">Bank Neo Commerce</option>
+                    <option value="Bank Central Asia">Bank BCA</option>
+                    <option value="Bank Rakyat indonesia">Bank BRI</option>
+                    <option value="Bank Nasional Indonesia">Bank BNI</option>
+                    <option value="Bank Mandiri">Bank Mandiri</option>
+                    <option value="Bank Artos Indonesia">Bank Artos Indonesia</option>
+                    <option value="Bank Permata">Bank Permata</option>
+                    <option value="Bank Permata Syariah">Bank Pertama Syariah</option>
+                    <option value="Bank Krut">Bank Krut</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="name" class="text-dark mb-2">Nama sesuai rekening</label>
+                  <input type="text" class="form-control mb-3" placeholder="masukan nama sesuai rekening"
+                    value="Ahmad Hidayat">
+                </div>
+                <div>
+                  <label for="rekening" class="text-dark mb-2">Nomor rekening</label>
+                  <input type="text" class="form-control" placeholder="masukan nomor rekening" value="14472847843843">
+                </div>
+              </div>
+              <div class="d-flex justify-content-end border-0 w-100 pt-3 mb-2">
+                <button type="button" class="btn btn-secondary mx-2" data-dismiss="modal">Tutup</button>
+                <button type="submit" class="btn bg-main text-white">Simpan perubahan</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal edit -->
+
+  <!-- Modal edit alamat -->
+  <div class="modal fade" id="editAddress" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0 d-flex flex-column">
+          <div class="d-flex wd-95 mx-auto justify-content-between">
+            <h5 class="modal-title fw-bold fsi-20" id="exampleModalLongTitle">Edit alamat</h5>
+            <button type="button" class="close border-0 bg-white" data-dismiss="modal" aria-label="Close">
+              <i class='bx bx-x-circle fsi-34 color-red'></i>
+            </button>
+          </div>
+          <div class="d-flex flex-wrap wd-95 mt-1">
+            <span class="fsi-14 wd-85 color-gray">Kamu bebas ubah detail alamatmu disini</span>
+          </div>
+        </div>
+        <div class="modal-body wd-95 mx-auto">
+          <div class="modal-form">
+            <!-- Form tambah alamat -->
+            <form action="">
+              <div class="add-form">
+                <div>
+                  <label for="name" class="text-dark mb-2">Nama penerima</label>
+                  <input type="text" class="form-control mb-3" placeholder="contoh. Asep">
+                </div>
+                <div>
+                  <label for="rekening" class="text-dark mb-2">Nomor telepon (WhatsApp)</label>
+                  <input type="text" class="form-control mb-3" placeholder="contoh. 08773045045">
+                </div>
+                <div>
+                  <label for="provinsi" class="text-dark mb-2">Provinsi</label>
+                  <input type="text" class="form-control mb-3" placeholder="contoh. Provinsi">
+                </div>
+                <div>
+                  <label for="kabupaten" class="text-dark mb-2">Kabupaten</label>
+                  <input type="text" class="form-control mb-3" placeholder="contoh. Sumedang">
+                </div>
+                <div>
+                  <label for="kabupaten" class="text-dark mb-2">Kecamatan</label>
+                  <input type="text" class="form-control mb-3" placeholder="contoh. Rancakalong">
+                </div>
+                <div>
+                  <label for="kabupaten" class="text-dark mb-2">Kelurahan / Desa</label>
+                  <input type="text" class="form-control mb-3" placeholder="contoh. Nagarawangi">
+                </div>
+                <div>
+                  <label for="rekening" class="text-dark mb-2">Alamat lengkap</label>
+                  <input type="text" class="form-control mb-3" placeholder="Nama jalan, gedung, No. rumah, kode pos">
+                </div>
+                <div>
+                  <label for="rekening" class="text-dark mb-2">Tandai sebagai</label>
+                  <select name="type" id="type" class="form-control">
+                    <option value=""></option>
+                    <option value="rumah">Rumah</option>
+                    <option value="kantor">Kantor</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer border-0 wd-95 mx-auto mb-2">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+          <button type="submit" class="btn bg-main text-white">Simpan perubahan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal -->
+
+  <!-- Modal delete confirm -->
+  <!-- Rekening -->
+  <div class="modal fade" id="deleteConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Yakin untuk hapus rekening?</h5>
+          <button type="button" class="close border-0 bg-white" data-dismiss="modal" aria-label="Close">
+            <i class='bx bx-x-circle fsi-30 color-red'></i>
+          </button>
+        </div>
+        <div class="modal-body py-5">
+          <a href="profile-edit-form.html"
+            class="w-75 mx-auto py-2 d-flex justify-content-center border border-secondary bg-main rounded shadow-sm">
+            <span class="text-white fsi-14">Ya, hapus rekening</span>
+          </a>
+          <button type="button" data-dismiss="modal" aria-label="Close"
+            class="close w-75 mx-auto py-2 d-flex justify-content-center border border-secondary bg-danger rounded shadow-sm my-2">
+            <span class="fsi-14 text-white">Tidak</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Alamat -->
+  <div class="modal fade" id="deleteConfirmAddress" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Yakin untuk hapus alamat?</h5>
+          <button type="button" class="close border-0 bg-white" data-dismiss="modal" aria-label="Close">
+            <i class='bx bx-x-circle fsi-30 color-red'></i>
+          </button>
+        </div>
+        <div class="modal-body py-5">
+          <a href="profile-edit-form.html"
+            class="w-75 mx-auto py-2 d-flex justify-content-center border border-secondary bg-main rounded shadow-sm">
+            <span class="text-white fsi-14">Ya, hapus alamat</span>
+          </a>
+          <button type="button" data-dismiss="modal" aria-label="Close"
+            class="close w-75 mx-auto py-2 d-flex justify-content-center border border-secondary bg-danger rounded shadow-sm my-2">
+            <span class="fsi-14 text-white">Tidak</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal delete -->
+  <!-- Modal Tambah Bank-->
+  <div class="modal fade" id="addBank" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0 d-flex flex-column">
+          <div class="d-flex wd-95 mx-auto justify-content-between align-items-center">
+            <h5 class="modal-title fw-bold fsi-20" id="exampleModalLongTitle">Tambah bank baru</h5>
+            <button type="button" class="close border-0 bg-white" data-dismiss="modal" aria-label="Close">
+              <i class='bx bx-x-circle fsi-30 color-red'></i>
+            </button>
+          </div>
+          <div class="d-flex flex-wrap wd-95 mt-1">
+            <span class="fsi-14 wd-90 color-gray">Yuk tambahin rekening kamu buat belanja di InginApa, kamu juga
+              bisa pake e-wallet kyak gopay, dana, dll loh :)</span>
+          </div>
+        </div>
+        <div class="modal-body wd-95 mx-auto">
+          <div class="modal-form">
+            <!-- Form tambah bank -->
+            <form action="">
+              <div class="add-form">
+                <div>
+                  <label for="select-bank" class="text-dark mb-2">Pilih bank</label>
+                  <select name="select-bank" id="select-bank" class="form-control mb-3">
+                    <option value=""></option>
+                    <option value="Gopay">Gopay</option>
+                    <option value="Dana">Dana</option>
+                    <option value="Ovo">Ovo</option>
+                    <option value="Neo Commerce">Bank Neo Commerce</option>
+                    <option value="Bank Central Asia">Bank BCA</option>
+                    <option value="Bank Rakyat indonesia">Bank BRI</option>
+                    <option value="Bank Nasional Indonesia">Bank BNI</option>
+                    <option value="Bank Mandiri">Bank Mandiri</option>
+                    <option value="Bank Artos Indonesia">Bank Artos Indonesia</option>
+                    <option value="Bank Permata">Bank Permata</option>
+                    <option value="Bank Permata Syariah">Bank Pertama Syariah</option>
+                    <option value="Bank Krut">Bank Krut</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="name" class="text-dark mb-2">Nama sesuai rekening</label>
+                  <input type="text" class="form-control mb-3" placeholder="masukan nama sesuai rekening">
+                </div>
+                <div>
+                  <label for="rekening" class="text-dark mb-2">Nomor rekening</label>
+                  <input type="text" class="form-control" placeholder="masukan nomor rekening">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer border-0 wd-95 mx-auto mb-2">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+          <button type="submit" class="btn bg-main text-white">Tambahkan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal tambah bank -->
+  <!-- Modal Tambah Alamat -->
+  <div class="modal fade" id="addAddress" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0 d-flex flex-column">
+          <div class="d-flex wd-95 mx-auto justify-content-between">
+            <h5 class="modal-title fw-bold fsi-20" id="exampleModalLongTitle">Tambah alamat baru</h5>
+            <button type="button" class="close border-0 bg-white" data-dismiss="modal" aria-label="Close">
+              <i class='bx bx-x-circle fsi-34 color-red'></i>
+            </button>
+          </div>
+          <div class="d-flex flex-wrap wd-95 mt-1">
+            <span class="fsi-14 wd-85 color-gray">Isi alamat yang jelas dan benar ya, biar kang kurirnya ga
+              nyasar ke lain hati :)</span>
+          </div>
+        </div>
+        <div class="modal-body wd-95 mx-auto">
+          <div class="modal-form">
+            <!-- Form tambah alamat -->
+            <form action="">
+              <div class="add-form">
+                <div>
+                  <label for="name" class="text-dark mb-2">Nama penerima</label>
+                  <input type="text" class="form-control mb-3" placeholder="contoh. Asep">
+                </div>
+                <div>
+                  <label for="rekening" class="text-dark mb-2">Nomor telepon (WhatsApp)</label>
+                  <input type="text" class="form-control mb-3" placeholder="contoh. 08773045045">
+                </div>
+                <div>
+                  <label for="provinsi" class="text-dark mb-2">Provinsi</label>
+                  <input type="text" class="form-control mb-3" placeholder="contoh. Provinsi">
+                </div>
+                <div>
+                  <label for="kabupaten" class="text-dark mb-2">Kabupaten</label>
+                  <input type="text" class="form-control mb-3" placeholder="contoh. Sumedang">
+                </div>
+                <div>
+                  <label for="kabupaten" class="text-dark mb-2">Kecamatan</label>
+                  <input type="text" class="form-control mb-3" placeholder="contoh. Rancakalong">
+                </div>
+                <div>
+                  <label for="kabupaten" class="text-dark mb-2">Kelurahan / Desa</label>
+                  <input type="text" class="form-control mb-3" placeholder="contoh. Nagarawangi">
+                </div>
+                <div>
+                  <label for="rekening" class="text-dark mb-2">Alamat lengkap</label>
+                  <input type="text" class="form-control mb-3" placeholder="Nama jalan, gedung, No. rumah, kode pos">
+                </div>
+                <div>
+                  <label for="rekening" class="text-dark mb-2">Tandai sebagai</label>
+                  <select name="type" id="type" class="form-control">
+                    <option value=""></option>
+                    <option value="rumah">Rumah</option>
+                    <option value="kantor">Kantor</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer border-0 wd-95 mx-auto mb-2">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+          <button type="submit" class="btn bg-main text-white">Tambahkan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal tambah alamat -->
+  <!-- Internet Connection Status-->
+  <div class="internet-connection-status" id="internetStatus"></div>
+  <!-- Footer Nav-->
+  <div class="footer-nav-area" id="footerNav">
+    <div class="container h-100 px-0">
+      <div class="suha-footer-nav h-100 mx-auto">
+        <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+          <li>
+            <a class="d-flex flex-column" href="index.html"><i class='bx bx-home fsi-28'></i><span>Beranda</span></a>
+          </li>
+          <li>
+            <a class="d-flex flex-column" href="index.html"><i class='bx bxs-news fsi-28'></i></i><span>Berita</span></a>
+          </li>
+          <li>
+            <a class="d-flex flex-column" href="chat.html"><i
+                class='bx bx-conversation fsi-28'></i><span>Pesan</span></a>
+          </li>
+          <li>
+            <a class="d-flex flex-column" href="notify.html"><i
+                class='bx bx-bell fsi-28'></i><span>Notifikasi</span></a>
+          </li>
+          <li>
+            <a class="d-flex flex-column" href="profile-edit-form.html"><i
+                class='bx bx-user-circle fsi-28 color-main-darker'></i><span class="color-main-darker">Akun</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- All JavaScript Files-->
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.passwordstrength.js"></script>
+  <script src="js/dark-mode-switch.js"></script>
+  <script src="js/no-internet.js"></script>
+  <script src="js/active.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no">
+  <meta name="description" content="Suha - Multipurpose Ecommerce Mobile HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#100DD1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- The above tags *must* come first in the head, any other head content must come *after* these tags-->
+  <!-- Title-->
+  <title>InginApa Indonesia - Platform Jual Beli Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+    rel="stylesheet">
+  <!-- Favicon-->
+  <link rel="icon" href="img/icons/icon-72x72.png">
+  <!-- Apple Touch Icon-->
+  <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+  <!-- CSS Libraries-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/lineicons.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Stylesheet-->
+  <link rel="stylesheet" href="style.css">
+  <!-- Web App Manifest-->
+  <link rel="manifest" href="manifest.json">
+  <!-- Custom Style -->
+  <style>
+    .shop-detail {
+      height: 50px;
+    }
+
+    .shop-detail div {
+      display: flex;
+      align-items: center;
+      color: #222222;
+      font-size: 15px;
+    }
+
+    .check-list {
+      width: 18px;
+      height: 18px;
+    }
+
+    .product-detail {
+      height: 120px;
+    }
+
+    .btn-checkout{
+      width: 130px;
+      height: 40px;
+    }
+
+    .btn-checkout:hover{
+      background-color: #54C648;
+      color: #ffffff;
+    }
+    .shipment-wrapper{
+      height: 100%;
+    }
+    .utama{
+      width: 60px;
+      height: 20px;
+      background-color: #54C64845;
+      margin-right: 40px;
+    }
+    .btn-ganti:hover{
+      color: #54C648;
+    }
+    .picker:hover{
+      background-color: rgba(84, 198, 72, 0.1);
+      border: 2px solid #54C648 !important;
+    }
+    @media only screen and (max-width: 743px) {
+      .page-content-wrapper {
+      margin-top: 80px !important;
+    }
+    .transaction-detail{
+      width: 95%;
+    }
+      .disappeared {
+        display: none !important;
+      }
+
+      .sec-1 {
+        width: 5%;
+      }
+
+      .sec-2 {
+        width: 80%;
+      }
+
+      .sec-4 {
+        width: 15%;
+        font-size: 14px !important;
+      }
+
+      .product-name {
+        width: 85%;
+      }
+      .product-name img{
+        width: 70px;
+        height: 70px;
+        margin-left: 5.33333333%;
+      }
+      .name-price {
+        flex-direction: column;
+      }
+      .name, .price{
+        width: 90%;
+      }
+      .name span:nth-child(1){
+        font-size: 18px;
+      }
+      .name span:nth-child(2){
+        font-size: 10px;
+      }
+      .price{
+        margin-left: 8.33333333%;
+      }
+      .qty{
+        width: 15%;
+      }
+      .shipment, .address{
+        flex-direction: column;
+      }
+      .reciever, .resi-number, .invoice{
+        align-items: flex-start !important;
+      }
+      
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader-->
+  <div class="preloader" id="preloader">
+    <div class="spinner-grow text-secondary" role="status">
+      <div class="sr-only">Loading...</div>
+    </div>
+  </div>
+  <!-- Header Area-->
+  <div class="header-area" id="headerArea">
+    <div class="topbar w-100 bg-young-gray">
+      <div class="container d-flex justify-content-between align-items-center h-100">
+        <div class="topbar-menu wd-9 d-flex justify-content-between">
+          <img src="icons/SVG/Downloadapp.svg" width="13px"><a>Download App</a>
+        </div>
+        <div class="topbar-menu wd-30 d-flex justify-content-between ">
+          <a>TentangInginapa</a>
+          <a>InginMitra</a>
+          <a>InginJualan?</a>
+          <a>Promo</a>
+          <a>InginSentre</a>
+        </div>
+      </div>
+    </div>
+    <div class="headbar wd-90 hg-70 d-flex align-items-center justify-content-between mx-auto">
+      <!-- Back To home Button-->
+      <div class="logo-wrapper wd-10">
+        <a href="index.html"><img src="icons/SVG/logo-inginapa.svg" width="100px" /></a>
+      </div>
+      <button onclick="goBack()" class="back-arrow d-md-none bg-main-darker border-0">
+        <i class='bx bx-left-arrow-alt text-white fsi-26 mt-1'></i>
+    </button>
+      <form class="searching-bar border border-secondary rounded d-flex align-items-center" action="">
+        <input class="bg-young-gray fsi-14 w-100 h-100 ps-5 pe-2 border-0" type="text" placeholder="Cari sesuatu...." />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <!-- Navbar Toggler-->
+      <div class="toggler wd-10 h-100 d-flex align-items-center justify-content-around">
+        <div class="dropdown show">
+          <a class="btn btn-white p-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class='bx bxs-dashboard fsi-32 text-dark'></i>
+          </a>
+          <div class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="catagory.html">Elektronik</a>
+            <a class="dropdown-item" href="catagory.html">Buah dan Sayur</a>
+            <a class="dropdown-item" href="catagory.html">Otomotif</a>
+            <a class="dropdown-item" href="catagory.html">Kerajinan</a>
+          </div>
+        </div>
+        <a href="keranjang.html">
+          <i class='bx bxs-cart fsi-32 text-dark'></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Content -->
+  <div class="page-content-wrapper w-100">
+    <div class="container h-100">
+      <div class="transaction-detail wd-80 mx-auto">
+        <!-- Product Info -->
+        <div class="invoice d-flex flex-column border border-secondary shadow-sm rounded mt-2 p-3">
+          <div>
+            <span class="fsi-18 color-gray fw-bold">INVOICE</span>
+          </div>
+          <div class="d-flex flex-column justify-content-center color-gray fw-semibold pt-1">
+            <span class="fsi-14 fw-semibold">INV/IA/CODE=1234328357BSRAFLY
+            </span>
+          </div>
+          <div class="d-flex w-100 justify-content-between color-gray fsi-14 py-2">
+            <span>Tanggal pembelian :</span><span class="fw-semibold">15 Juli 2022</span>
+          </div>
+          <div class="d-flex w-100 justify-content-between color-gray fsi-14 pb-2">
+            <span>Status :</span><span class="color-main fw-semibold">Berhasil</span>
+          </div>
+          <a href="#" class="fsi-14 color-main d-flex w-100 justify-content-center align-items-center"><i class='bx bxs-barcode fsi-20 mx-1'></i>Cetak invoice</a>
+        </div>
+        <div class="product-info w-100">
+            <div class="shop-detail bg-soft-gray d-flex rounded mt-3">
+              <div class="sec-1 wd-5"></div>
+              <div class="sec-2 wd-35">Pesanan anda</div>
+              <div class="wd-20 disappeared">Harga satuan</div>
+              <div class="sec-4 wd-20">Qty</div>
+              <div class="wd-20 disappeared">Total Harga</div>
+            </div>
+            <div class="product-detail d-flex bg-soft-gray rounded mt-3">
+              <div class="product-name wd-60 d-flex align-items-center">
+                  <img class="rounded" src="img/product/basotahurafly.jpg" alt="foto produk" width="120px">
+                  <div class="name-price d-flex w-100">
+                    <div class="wd-56 name offset-1 d-flex flex-column">
+                      <span class="fsi-20 text-dark fw-semibold">Baso tahu Kng Rafly</span>
+                      <span class="fsi-12 color-gray fw-normal ">Variasi : Pedas banggat</span>
+                    </div>
+                    <div class="wd-44 price d-flex align-items-center text-dark">
+                      Rp.<span> 57.000,00</span>
+                    </div>
+                  </div>
+              </div>
+              <div class="qty wd-20 d-flex align-items-center color-gray">
+                x <span>1</span>
+              </div>
+              <div class="wd-20 d-flex align-items-center text-dark disappeared">
+                Rp.<span> 57.000,00</span>
+              </div>
+            </div>
+        </div>
+        <!-- shipment detail -->
+        <div class="shipment-wrapper d-flex flex-column">
+          <div class="address d-flex justify-content-between w-100 mt-3">
+            <div class="location d-flex flex-column py-1">
+              <div class="d-flex align-items-center">
+                <img src="icons/PNG/address.png" alt="address" width="20px">
+                <span class="fsi-16 color-gray fw-bold">&nbsp;Alamat pengiriman</span>
+              </div>
+              <div class="py-2">
+                <span class="fsi-14 color-gray fw-semibold">Jl. Raya Rancakalong, Nagarawangi, Rancakalong, Sumedang, RT 03/RW 07</span>
+              </div>
+            </div>
+            <div class="reciever d-flex flex-column align-items-end py-1">
+              <div class="d-flex align-items-center">
+                <span class="fsi-16 color-gray fw-bold">Nama penerima</span>
+              </div>
+              <div class="d-block fsi-14 color-gray fw-semibold py-2">
+                <span>Ahmd Hdyt</span>&nbsp;<span>(087713193248)</span>
+              </div>
+            </div>
+          </div>
+          <div class="shipment d-flex justify-content-between w-100">
+            <div class="delivery py-2">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="fsi-16 color-gray fw-bold">Informasi kurir</span>
+                </div>
+              </div>
+              <div class="d-flex flex-column justify-content-center color-gray fw-semibold pt-1">
+                <span class="fsi-16 fw-semibold">J&T Reguler</span>
+                <span class="fsi-12">Estimasi diterima pada tanggal 19-20 Juli</span>
+              </div>
+            </div>
+              <div class="resi-number d-flex flex-column align-items-end py-2">
+                <div>
+                  <span class="fsi-16 color-gray fw-bold">No resi</span>
+                </div>
+                <div class="d-flex flex-column justify-content-center color-gray fw-semibold pt-1">
+                  <span class="fsi-14 fw-semibold">23904893258</span>
+                </div>
+              </div>
+              <!--  -->  
+          </div>
+          <div class="payment d-flex justify-content-between w-100">
+            <div class="payment-method d-flex flex-column py-2">
+              <div class="d-flex align-items-center">
+                <span class="fsi-16 color-gray fw-bold">Metode pembayaran</span>
+              </div>
+              <div class="py-1">
+                <span class="fsi-14 color-gray fw-semibold">COD (Cash on Delivery)</span>
+              </div>
+            </div>
+            <div class="total-price d-flex flex-column align-items-end py-2">
+              <div class="d-flex align-items-center">
+                <span class="fsi-16 color-gray fw-bold">Total harga</span>
+              </div>
+              <div class="d-block fsi-14 color-gray fw-semibold py-2">
+                <span>Rp. 57.000,00</span>
+              </div>
+            </div>
+          </div>
+          <div class="option w-100">
+            <a href="tracking.html" class="btn btn-lg bg-soft-green border-main d-block color-main-darker">Lacak pesanan</a>
+            <a href="chat.html" class="btn btn-lg bg-main d-block text-white mt-2 fw-normal">Chat penjual</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- /Content -->
+  <!-- Internet Connection Status-->
+  <div class="internet-connection-status" id="internetStatus"></div>
+  <!-- Footer Nav-->
+  <div class="footer-nav-area" id="footerNav">
+    <div class="container h-100 px-0">
+      <div class="suha-footer-nav h-100 mx-auto">
+        <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+          <li>
+              <a class="d-flex flex-column" href="index.html"><i class='bx bx-home fsi-28'></i><span>Beranda</span></a>
+          </li>
+          <li>
+              <a class="d-flex flex-column" href="index.html"><i class='bx bxs-news fsi-28'></i></i><span>Berita</span></a>
+          </li>
+          <li>
+              <a class="d-flex flex-column" href="chat.html"><i class='bx bx-conversation fsi-28'></i><span>Pesan</span></a>
+          </li>
+          <li>
+              <a class="d-flex flex-column" href="index.html"><i class='bx bx-bell fsi-28' ></i><span>Notifikasi</span></a>
+          </li>
+          <li>
+              <a class="d-flex flex-column" href="profile-edit-form.html"><i class='bx bx-user-circle fsi-28' ></i><span>Akun</span></a>
+
+          </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <!-- All JavaScript Files-->
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.passwordstrength.js"></script>
+  <script src="js/dark-mode-switch.js"></script>
+  <script src="js/no-internet.js"></script>
+  <script src="js/active.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+
+</html>

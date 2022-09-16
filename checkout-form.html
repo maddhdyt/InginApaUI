@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no">
+  <meta name="description" content="Suha - Multipurpose Ecommerce Mobile HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#100DD1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- The above tags *must* come first in the head, any other head content must come *after* these tags-->
+  <!-- Title-->
+  <title>InginApa Indonesia - Platform Jual Beli Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+    rel="stylesheet">
+  <!-- Favicon-->
+  <link rel="icon" href="img/icons/icon-72x72.png">
+  <!-- Apple Touch Icon-->
+  <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+  <!-- CSS Libraries-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/lineicons.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Stylesheet-->
+  <link rel="stylesheet" href="style.css">
+  <!-- Web App Manifest-->
+  <link rel="manifest" href="manifest.json">
+  <!-- Custom Style -->
+  <style>
+    .shop-detail {
+      height: 50px;
+    }
+
+    .shop-detail div {
+      display: flex;
+      align-items: center;
+      color: #222222;
+      font-size: 15px;
+    }
+
+    .check-list {
+      width: 18px;
+      height: 18px;
+    }
+
+    .product-detail {
+      height: 120px;
+    }
+
+    .btn-checkout{
+      width: 130px;
+      height: 40px;
+    }
+
+    .btn-checkout:hover{
+      background-color: #54C648;
+      color: #ffffff;
+    }
+    .payment-wrapper{
+      height: 400px;
+    }
+    .utama{
+      width: 60px;
+      height: 20px;
+      background-color: #54C64845;
+      margin-right: 40px;
+    }
+    .btn-ganti:hover{
+      color: #54C648;
+    }
+    .picker:hover{
+      background-color: rgba(84, 198, 72, 0.1);
+      border: 2px solid #54C648 !important;
+    }
+    @media only screen and (max-width: 743px) {
+      .page-content-wrapper {
+      margin-top: 80px !important;
+    }
+    .checkout{
+      width: 95%;
+    }
+      .disappeared {
+        display: none !important;
+      }
+      .sec-1 {
+        width: 5%;
+      }
+
+      .sec-2 {
+        width: 80%;
+      }
+
+      .sec-4 {
+        width: 15%;
+        font-size: 14px !important;
+      }
+
+      .product-name {
+        width: 85%;
+      }
+      .product-name img{
+        width: 70px;
+        height: 70px;
+        margin-left: 5.33333333%;
+      }
+      .name-price {
+        flex-direction: column;
+      }
+      .name, .price{
+        width: 90%;
+      }
+      .name span:nth-child(1){
+        font-size: 18px;
+      }
+      .name span:nth-child(2){
+        font-size: 10px;
+      }
+      .price{
+        margin-left: 8.33333333%;
+      }
+      .qty{
+        width: 15%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader-->
+  <div class="preloader" id="preloader">
+    <div class="spinner-grow text-secondary" role="status">
+      <div class="sr-only">Loading...</div>
+    </div>
+  </div>
+  <!-- Header Area-->
+  <div class="header-area" id="headerArea">
+    <div class="topbar w-100 bg-young-gray">
+      <div class="container d-flex justify-content-between align-items-center h-100">
+        <div class="topbar-menu wd-9 d-flex justify-content-between">
+          <img src="icons/SVG/Downloadapp.svg" width="13px"><a>Download App</a>
+        </div>
+        <div class="topbar-menu wd-30 d-flex justify-content-between ">
+          <a>TentangInginapa</a>
+          <a>InginMitra</a>
+          <a>InginJualan?</a>
+          <a>Promo</a>
+          <a>InginSentre</a>
+        </div>
+      </div>
+    </div>
+    <div class="headbar wd-90 hg-70 d-flex align-items-center justify-content-between mx-auto">
+      <!-- Back To home Button-->
+      <div class="logo-wrapper wd-10">
+        <a href="index.html"><img src="icons/SVG/logo-inginapa.svg" width="100px" /></a>
+      </div>
+      <button onclick="goBack()" class="back-arrow d-md-none bg-main-darker border-0">
+        <i class='bx bx-left-arrow-alt text-white fsi-26 mt-1'></i>
+    </button>
+      <form class="searching-bar border border-secondary rounded d-flex align-items-center" action="">
+        <input class="bg-young-gray fsi-14 w-100 h-100 ps-5 pe-2 border-0" type="text" placeholder="Cari sesuatu...." />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <!-- Navbar Toggler-->
+      <div class="toggler wd-10 h-100 d-flex align-items-center justify-content-around">
+        <div class="dropdown show">
+          <a class="btn btn-white p-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class='bx bxs-dashboard fsi-32 text-dark'></i>
+          </a>
+          <div class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="catagory.html">Elektronik</a>
+            <a class="dropdown-item" href="catagory.html">Buah dan Sayur</a>
+            <a class="dropdown-item" href="catagory.html">Otomotif</a>
+            <a class="dropdown-item" href="catagory.html">Kerajinan</a>
+          </div>
+        </div>
+        <a href="keranjang.html">
+          <i class='bx bxs-cart fsi-32 text-dark'></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Content -->
+  <div class="page-content-wrapper w-100">
+    <div class="container h-100">
+      <div class="checkout wd-80 mx-auto">
+        <!-- CO list -->
+        <div class="checkout-list w-100">
+            <div class="shop-detail bg-soft-gray d-flex rounded mt-3">
+              <div class="sec-1 wd-5"></div>
+              <div class="sec-2 wd-35">Pesanan anda</div>
+              <div class="wd-20 disappeared">Harga satuan</div>
+              <div class="sec-4 wd-20">Qty</div>
+              <div class="wd-20 disappeared">Total Harga</div>
+            </div>
+            <div class="product-detail d-flex bg-soft-gray rounded mt-3">
+              <div class="product-name wd-60 d-flex align-items-center">
+                  <img class="rounded" src="img/product/basotahurafly.jpg" alt="foto produk" width="120px">
+                  <div class="name-price d-flex w-100">
+                    <div class="wd-56 name offset-1 d-flex flex-column">
+                      <span class="fsi-20 text-dark fw-semibold">Baso tahu Kng Rafly</span>
+                      <span class="fsi-12 color-gray fw-normal ">Variasi : Pedas banggat</span>
+                    </div>
+                    <div class="wd-44 price d-flex align-items-center text-dark">
+                      Rp.<span> 57.000,00</span>
+                    </div>
+                  </div>
+              </div>
+              <div class="qty wd-20 d-flex align-items-center color-gray">
+                x <span>1</span>
+              </div>
+              <div class="wd-20 d-flex align-items-center text-dark disappeared">
+                Rp.<span> 57.000,00</span>
+              </div>
+            </div>
+        </div>
+        <!-- Payment -->
+        <form action="">
+        <div class="payment-wrapper d-flex flex-column mt-5">
+          <div class="address w-100 hg-40">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center wd-80">
+                <img src="icons/PNG/address.png" alt="address" width="20px">
+                <span class="fsi-16 color-gray fw-bold">&nbsp;Alamat pengiriman</span>
+              </div>
+              <div class="d-flex">
+                <div class="utama fsi-12 text-center text-dark rounded">Utama</div>
+                <button type="button" data-toggle="modal" data-target="#changeAddress" class="btn-ganti color-main fsi-14 border-0 bg-white">Ganti</a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between hg-80">
+              <span class="fsi-14 color-gray fw-semibold">Jl. Raya Rancakalong, Nagarawangi, Rancakalong, Sumedang</span>
+              <div class="d-flex flex-column align-items-center fsi-14 color-gray fw-semibold">
+                <span>Ahmd Hdyt</span>
+                <span>(087713193248)</span>
+              </div>
+            </div>
+          </div>
+          <div class="shipment w-100 hg-35">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <span class="fsi-16 color-main fw-bold">Opsi Pengiriman</span>
+              </div>
+              <div>
+                <button type="button" data-toggle="modal" data-target="#changeDelivery" class="btn-ganti color-main fsi-14 border-0 bg-white">Ganti</button>
+              </div>
+            </div>
+            <div class="d-flex flex-column justify-content-center color-gray fw-semibold hg-80">
+              <span class="fsi-16 fw-bold">J&T Reguler</span>
+              <span class="fsi-12">Akan di terima pada tanggal 32 April 2022</span>
+            </div>
+          </div>
+          <div class="payment w-100 hg-20">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <span class="fsi-16 color-main fw-bold">Metode pembayaranmu</span>
+              </div>
+              <div>
+                <button type="button" data-toggle="modal" data-target="#changeBank" class="btn-ganti bg-white color-main fsi-14 border-0">Ganti</button>
+              </div>
+            </div>
+            <div class="d-flex align-items-center hg-80">
+              <span class="fsi-16 fw-bold color-gray">COD (Bayar di Tempat)</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 d-flex justify-content-end">
+          <!-- <button type="submit" class="btn-checkout bg-soft-green border-main color-gray fw-semibold rounded">Lanjut bayar</button> -->
+          <a href="checkout-confirm.html" class="btn btn-md bg-soft-green border-main color-gray">Lanjut bayar</a>
+        </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <!-- Modal -->
+  <!-- Modal Ganti Alamat -->
+  <div class="modal fade" id="changeAddress" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header border-0 d-flex flex-column">
+                  <div class="d-flex wd-95 mx-auto justify-content-between align-items-center">
+                    <h5 class="modal-title fw-bold fsi-20" id="exampleModalLongTitle">Ganti alamat</h5>
+                    <button type="button" class="close border-0 bg-white" data-dismiss="modal" aria-label="Close">
+                      <i class='bx bx-x-circle fsi-30 color-red'></i>
+                    </button>
+                  </div>
+                  <div class="d-flex flex-wrap wd-95 mt-1">
+                    <span class="fsi-14 wd-90 color-gray">Ganti alamatmu sesuai kamu tinggal sekarang</span>
+                  </div>
+                </div>
+                <div class="wd-90 mx-auto">
+                  <div class="modal-form">
+                    <!-- Data alamat -->
+                    <div class="picker d-flex flex-wrap w-100 mt-3 p-3 border shadow-sm rounded">
+                      <div class="w-100">
+                        <div class="d-flex align-items-center"><i class='bx bx-map-pin fsi-18 color-main-darker'></i><span
+                            class="fsi-16 color-gray fw-bold ms-2">Alamat utama</span></div>
+                        <span class="fsi-14 color-gray mt-2">Jl. Raya Rancakalong, Rt.03/Rw.07, Nagarawangi, Rancakalong,
+                          Sumedang</span>
+                      </div>
+                    </div>
+                    <div class="picker d-flex flex-wrap w-100 mt-3 p-3 border shadow-sm rounded">
+                      <div class="w-100">
+                        <div class="d-flex align-items-center">
+                          <i class='bx bxs-business fsi-18 color-main-darker'></i><span
+                      class="fsi-16 color-gray fw-bold ms-2">Alamat kantor</span></div>
+                  <span class="fsi-14 color-gray mt-2">Perum Dano permai 02, Gg. Jalan buntu</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer border-0 wd-95 mx-auto mb-2">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                  <button type="submit" class="btn bg-main text-white">Pilih</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  <!-- end modal ganti alamat -->
+
+  <!-- Modal Ganti Jasa Kirim -->
+  <div class="modal fade" id="changeDelivery" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header border-0 d-flex flex-column">
+                  <div class="d-flex wd-95 mx-auto justify-content-between align-items-center">
+                    <h5 class="modal-title fw-bold fsi-20" id="exampleModalLongTitle">Ganti Kurir</h5>
+                    <button type="button" class="close border-0 bg-white" data-dismiss="modal" aria-label="Close">
+                      <i class='bx bx-x-circle fsi-30 color-red'></i>
+                    </button>
+                  </div>
+                  <div class="d-flex flex-wrap wd-95 mt-1">
+                    <span class="fsi-14 wd-90 color-gray">Ganti kurir sesuai kebutuhanmu</span>
+                  </div>
+                </div>
+                <div class="wd-90 mx-auto">
+                  <div class="modal-form">
+                    <!-- Data kurir -->
+                    <div class="picker d-flex flex-wrap w-100 mt-3 p-3 border shadow-sm rounded">
+                      <div class="d-flex w-100 h-100 mx-auto flex-column justify-content-center">
+                        <h5>J&T Reguler</h5>
+                        <h6 class="fsi-14 color-gray">Kisaran harga : <span>Rp.16.000,00 - Rp.20.000,00</span></h6>
+                      </div>
+                    </div>
+                    <div class="picker d-flex flex-wrap w-100 mt-3 p-3 border shadow-sm rounded">
+                      <div class="d-flex w-100 h-100 mx-auto flex-column justify-content-center">
+                        <h5>Sicepat Reguler</h5>
+                        <h6 class="fsi-14 color-gray">Kisaran harga : <span>Rp.16.000,00 - Rp.20.000,00</span></h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer border-0 wd-95 mx-auto mb-2">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                  <button type="submit" class="btn bg-main text-white">Pilih</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  <!-- end modal ganti jasa kirim -->
+
+  <!-- Modal Ganti Method Bayar -->
+  <div class="modal fade" id="changeBank" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header border-0 d-flex flex-column">
+                  <div class="d-flex wd-95 mx-auto justify-content-between align-items-center">
+                    <h5 class="modal-title fw-bold fsi-20" id="exampleModalLongTitle">Ganti metode pembayaran</h5>
+                    <button type="button" class="close border-0 bg-white" data-dismiss="modal" aria-label="Close">
+                      <i class='bx bx-x-circle fsi-30 color-red'></i>
+                    </button>
+                  </div>
+                  <div class="d-flex flex-wrap wd-95 mt-1">
+                    <span class="fsi-14 wd-90 color-gray">Ganti metode pembayaran dengan rekening yang udah kamu tambahin</span>
+                  </div>
+                </div>
+                <div class="wd-90 mx-auto">
+                  <div class="modal-form">
+                    <!-- Data bank -->
+                    <div class="picker d-flex flex-wrap w-100 mt-3 p-3 border shadow-sm rounded">
+                      <div class="d-flex w-100 align-items-center">
+                        <img src="img/icons/cod.png" width="25px">
+                        <span class="fsi-16 ms-2 color-gray fw-bold">COD (Bayar di Tempat)</span>
+                      </div>
+                      <div class="d-flex w-100 align-items-center mt-2">
+                        <span class="fsi-14 color-gray">Bayar dengan uang tunai saat pesanan sampai</span>
+                      </div>
+                  </div>
+                    <div class="picker d-flex flex-wrap w-100 mt-3 p-3 border shadow-sm rounded">
+                        <div class="d-flex w-100 align-items-center">
+                          <img src="img/icons/logo-bca.png" width="25px">
+                          <span class="fsi-16 ms-2 color-gray fw-bold">Bank BCA</span>
+                        </div>
+                        <div class="d-flex w-100 align-items-center mt-2">
+                          <span class="fsi-14 color-gray">Rekening :</span>
+                          <span class="fsi-14 ms-1 color-gray">347825378</span>
+                        </div>
+                    </div>
+                    <div class="picker d-flex flex-wrap w-100 mt-3 p-3 border shadow-sm rounded">
+                        <div class="d-flex w-100 align-items-center">
+                          <img src="img/icons/logo-neo.png" width="25px">
+                          <span class="fsi-16 ms-2 color-gray fw-bold">Bank Neo Commerce</span>
+                        </div>
+                        <div class="d-flex w-100 align-items-center mt-2">
+                          <span class="fsi-14 color-gray">Rekening :</span>
+                          <span class="fsi-14 ms-1 color-gray">14472847843843</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer border-0 wd-95 mx-auto mb-2">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                  <button type="submit" class="btn bg-main text-white">Pilih</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  <!-- end modal ganti method pembayaran -->
+  <!-- /Content -->
+  <!-- Internet Connection Status-->
+  <div class="internet-connection-status" id="internetStatus"></div>
+  <!-- Footer Nav-->
+  <div class="footer-nav-area" id="footerNav">
+    <div class="container h-100 px-0">
+      <div class="suha-footer-nav h-100 mx-auto">
+        <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+          <li>
+              <a class="d-flex flex-column" href="index.html"><i class='bx bx-home fsi-28'></i><span>Beranda</span></a>
+          </li>
+          <li>
+              <a class="d-flex flex-column" href="index.html"><i class='bx bxs-news fsi-28'></i></i><span>Berita</span></a>
+          </li>
+          <li>
+              <a class="d-flex flex-column" href="chat.html"><i class='bx bx-conversation fsi-28'></i><span>Pesan</span></a>
+          </li>
+          <li>
+              <a class="d-flex flex-column" href="notify.html"><i class='bx bx-bell fsi-28' ></i><span>Notifikasi</span></a>
+          </li>
+          <li>
+              <a class="d-flex flex-column" href="profile-edit-form.html"><i class='bx bx-user-circle fsi-28' ></i><span>Akun</span></a>
+
+          </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <!-- All JavaScript Files-->
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.passwordstrength.js"></script>
+  <script src="js/dark-mode-switch.js"></script>
+  <script src="js/no-internet.js"></script>
+  <script src="js/active.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+
+</html>

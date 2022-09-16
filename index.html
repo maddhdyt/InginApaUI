@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no" />
+  <meta name="description" content="Suha - Multipurpose Ecommerce Mobile HTML Template" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="theme-color" content="#00a859" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <!-- The above tags *must* come first in the head, any other head content must come *after* these tags-->
+  <!-- Title-->
+  <title>InginApa Indonesia - Platform Jual Beli Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Favicon-->
+  <link rel="icon" href="img/icons/icon-72x72.png" />
+  <!-- Apple Touch Icon-->
+  <link rel="apple-touch-icon" href="img/icons/icon-96x96.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png" />
+  <!-- CSS Libraries-->
+  <link rel="stylesheet" href="css/bootstrap.min.css?v=1" />
+  <link rel="stylesheet" href="css/animate.css?v=1" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css?v=1" />
+  <link rel="stylesheet" href="css/font-awesome.min.css?v=1" />
+  <link rel="stylesheet" href="css/lineicons.min.css?v=1" />
+  <link rel="stylesheet" href="css/magnific-popup.css?v=1" />
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Stylesheet-->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Web App Manifest-->
+  <link rel="manifest" href="manifest.json" />
+</head>
+<style>
+  .btn-logres{
+      width: 80px;
+      height: 35px;
+    }
+    
+  @media only screen and (max-width: 743px){
+    .page-content-wrapper{
+      margin-top: 80px !important;
+    }
+    .btn-logres{
+      font-size: 12px;
+      width: 50px;
+      height: 30px;
+      color: #ffffff;
+      background-color: transparent;
+      border: 2px solid #ffffff;
+    }
+    .btn-logres:hover{
+      color: #ffffff;
+    }
+    .header-area{
+      background-color: #1E7C14;
+    }
+    .headbar{
+      width: 95%;
+    }
+    .searching-bar{
+      background-color: #ffffff;
+    }
+  }
+  
+</style>
+<body>
+  <!-- Preloader-->
+  <div class="preloader" id="preloader">
+    <div class="spinner-grow text-secondary" role="status">
+      <div class="sr-only">Loading...</div>
+    </div>
+  </div>
+  <!-- Header Area-->
+  <div class="header-area shadow-sm" id="headerArea">
+    <div class="topbar w-100 bg-young-gray">
+      <div class="container d-flex justify-content-between align-items-center h-100">
+        <div class="topbar-menu wd-9 d-flex justify-content-between">
+          <img src="icons/SVG/Downloadapp.svg" width="13px"><a>Download App</a>
+        </div>
+        <div class="topbar-menu wd-30 d-flex justify-content-between ">
+          <a>TentangInginapa</a>
+          <a>InginMitra</a>
+          <a>InginJualan?</a>
+          <a>Promo</a>
+          <a>InginSentre</a>
+        </div>
+      </div>
+    </div>
+    <div class="headbar wd-90 hg-70 d-flex align-items-center justify-content-between mx-auto">
+      <!-- Back To home Button-->
+      <div class="logo-wrapper">
+        <a href="index.html"><img src="icons/SVG/logo-inginapa.svg" width="100px" /></a>
+      </div>
+      <form class="searching-bar w-75 border border-secondary rounded d-flex align-items-center" action="">
+        <input class="bg-young-gray fsi-14 w-100 h-100 ps-5 pe-2 border-0" type="text" placeholder="Cari sesuatu...." />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <!-- Login / Register -->
+        <a href="register-form.html" class="btn-logres fsi-14 bg-soft-green color-main border-main d-flex justify-content-center align-items-center rounded">Daftar</a>
+        <a href="login-form.html" class="btn-logres fsi-14 bg-main text-white border-main d-flex justify-content-center align-items-center rounded">Masuk</a>
+    </div>
+  </div>
+  <!-- PWA Install Alert -->
+  <div class="toast pwa-install-alert shadow bg-white" role="alert" aria-live="assertive" aria-atomic="true"
+    data-bs-delay="10000" data-bs-autohide="true">
+
+  </div>
+  <div class="page-content-wrapper">
+    <div class="container">
+        <!-- Hero Slides-->
+        <div class="hero-slides owl-carousel">
+          <!-- Single Hero Slide-->
+          <div class="single-hero-slide" style="background-image: url('WhatsApp Image 2022-05-23 at 14.08.17.jpeg')">
+
+          </div>
+          <!-- Single Hero Slide-->
+          <div class="single-hero-slide" style="background-image: url('slide3+.jpg')">
+
+          </div>
+        </div>
+    </div>
+    <!-- Product Catagories -->
+
+    <div class="product-catagories-wrapper py-3">
+      <div class="container">
+        <div class="section-heading">
+          <h6>Kategori</h6>
+        </div>
+        <div class="product-catagory-wrap">
+          <div class="row">
+            <div class="catagory-slide owl-carousel">
+              <!-- Single Catagory Card -->
+              <div class="col col-lg-12 col-sm-4">
+                <div class="card catagory-card">
+                  <div class="card-body border border-secondary rounded bg-young-gray border border-secondary rounded">
+                    <a class="mt-2" href="#">
+                      <img class="mb-2" src="icons/PNG/buah.png">
+                      <span>Buah</span></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Catagory Card -->
+              <div class="col col-lg-12 col-sm-4">
+                <div class="card catagory-card">
+                  <div class="card-body border border-secondary rounded bg-young-gray">
+                    <a class="mt-2" href="#">
+                      <img class="mb-2" src="icons/PNG/sayur.png" alt="">
+                      <span>Sayur</span></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Catagory Card -->
+              <div class="col col-lg-12 col-sm-4">
+                <div class="card catagory-card">
+                  <div class="card-body border border-secondary rounded bg-young-gray">
+                    <a class="mt-2" href="#">
+                      <img class="mb-2" src="icons/PNG/kuliner.png" alt="">
+                      <span>Kuliner</span></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Catagory Card -->
+              <div class="col col-lg-12 col-sm-4">
+                <div class="card catagory-card">
+                  <div class="card-body border border-secondary rounded bg-young-gray">
+                    <a class="mt-2" href="#">
+                      <img src="icons/PNG/olahraga.png" alt="">
+                      <span class="mb-2 mt-2">Olahraga</span></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Catagory Card -->
+              <div class="col col-lg-12 col-sm-4">
+                <div class="card catagory-card">
+                  <div class="card-body border border-secondary rounded bg-young-gray">
+                    <a class="mt-2" href="#">
+                      <img class="mb-2" src="icons/PNG/pakaian.png" alt="">
+                      <span>Pakaian</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Catagory Card -->
+              <div class="col col-lg-12 col-sm-4">
+                <div class="card catagory-card">
+                  <div class="card-body border border-secondary rounded bg-young-gray">
+                    <a class="mt-2" href="#">
+                      <img class="mb-2" src="icons/PNG/aksesoris (2).png" alt="">
+                      <span>Aksesoris</span></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Catagory Card -->
+              <div class="col col-lg-12 col-sm-4">
+                <div class="card catagory-card">
+                  <div class="card-body border border-secondary rounded bg-young-gray">
+                    <a class="mt-2" href="#">
+                      <img class="mb-2" src="icons/PNG/skin care.png" alt="">
+                      <span>Skincare</span></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Catagory Card -->
+              <div class="col col-lg-12 col-sm-4">
+                <div class="card catagory-card">
+                  <div class="card-body border border-secondary rounded bg-young-gray">
+                    <a href="catagory.html" class="mt-2" href="#">
+                      <img class="mb-2" src="icons/PNG/elektronik.png" alt="">
+                      <span>Elektronik</span></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Catagory Card -->
+              <div class="col col-lg-12 col-sm-4">
+                <div class="card catagory-card">
+                  <div class="card-body border border-secondary rounded bg-young-gray">
+                    <a class="mt-2" href="#">
+                      <img class="mb-2" src="icons/PNG/kerajinan.png" alt="">
+                      <span>Kerajinan</span></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Catagory Card -->
+              <div class="col col-lg-12 col-sm-4">
+                <div class="card catagory-card">
+                  <div class="card-body border border-secondary rounded bg-young-gray">
+                    <a class="mt-2" href="#">
+                      <img class="mb-2" src="icons/PNG/otomotif.png" alt="">
+                      <span>Otomotif</span></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Catagory Card -->
+              <div class="col col-lg-12 col-sm-4">
+                <div class="card catagory-card">
+                  <div class="card-body border border-secondary rounded bg-young-gray">
+                    <a class="mt-3" href="#">
+                      <img src="icons/PNG/ticket.png" alt="">
+                      <span>Tiket</span></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Catagory Card -->
+              <div class="col col-lg-12 col-sm-4">
+                <div class="card catagory-card">
+                  <div class="card-body border border-secondary rounded bg-young-gray">
+                    <a class="mt-3" href="#">
+                      <img src="icons/PNG/tax.png" alt="">
+                      <span>Pajak</span></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Catagory Card -->
+              <div class="col col-lg-12 col-sm-4">
+                <div class="card catagory-card">
+                  <div class="card-body border border-secondary rounded bg-young-gray">
+                    <a class="mt-2" href="#">
+                      <img class="mb-2" src="icons/PNG/property.png" alt="">
+                      <span>Properti</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Flash Sale Slide -->
+    <div class="flash-sale-wrapper">
+      <div class="container">
+        <div class="section-heading d-flex align-items-center justify-content-between">
+          <h6 class="me-1 d-flex align-items-center">
+            <svg class="bi bi-lightning me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z">
+              </path>
+            </svg>Flash sale
+          </h6>
+          <!-- Please use event time this format: YYYY/MM/DD hh:mm:ss -->
+          <ul class="sales-end-timer ps-0 d-flex align-items-center" data-countdown="2022/01/01 14:21:37">
+            <li><span class="days">0</span>d</li>
+            <li><span class="hours">0</span>h</li>
+            <li><span class="minutes">0</span>m</li>
+            <li><span class="seconds">0</span>s</li>
+          </ul>
+        </div>
+        <!-- Flash Sale Slide-->
+        <div class="flash-sale-slide owl-carousel">
+          <!-- Single Flash Sale Card-->
+          <div class="card flash-sale-card">
+            <div class="card-body border border-secondary rounded">
+              <a href="single-product.html"><img src="img/product/kaos.jpg" alt="" /><span
+                  class="product-title">Kaos Cotton 30s Polos 3pcs</span>
+                <p class="sale-price">
+                  Rp.50.000<span class="real-price">Rp.100.000</span>
+                </p>
+                <span class="progress-title">98% Terjual</span>
+                <!-- Progress Bar-->
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Single Flash Sale Card-->
+          <div class="card flash-sale-card">
+            <div class="card-body border border-secondary rounded">
+              <a href="single-product.html"><img src="img/product/headphone.jpg" alt="" /><span
+                  class="product-title">Headphone Sony Original</span>
+                <p class="sale-price">
+                  Rp.190.000<span class="real-price">Rp.220.000</span>
+                </p>
+                <span class="progress-title">70% Terjual</span>
+                <!-- Progress Bar-->
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Single Flash Sale Card -->
+          <div class="card flash-sale-card">
+            <div class="card-body border border-secondary rounded">
+              <a href="single-product.html"><img src="img/product/casing.jpg" alt="" /><span
+                  class="product-title">Casing Xaomi Redmi</span>
+                <p class="sale-price">
+                  Rp.10.000<span class="real-price">Rp.15.000</span>
+                </p>
+                <span class="progress-title">80% Terjual</span>
+                <!-- Progress Bar-->
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="card flash-sale-card">
+            <div class="card-body border border-secondary rounded">
+              <a href="single-product.html"><img src="img/product/basotahurafly.jpg" alt="" /><span
+                  class="product-title">Baso tahu kang rafly</span>
+                <p class="sale-price">
+                  Rp.10.000<span class="real-price">Rp.15.000</span>
+                </p>
+                <span class="progress-title">80% Terjual</span>
+                <!-- Progress Bar-->
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Top Products -->
+      <div class="top-products-area py-3">
+        <div class="container">
+          <div class="section-heading d-flex align-items-center justify-content-between">
+            <h6>Pilihan Terbaik</h6>
+            <a class="btn" href="#">Lihat semua</a>
+          </div>
+          <div class="row g-3">
+            <!-- Single Top Product Card -->
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="card product-card">
+                <div class="card-body border border-secondary rounded">
+                  <!-- Thumbnail --><a class="product-thumbnail d-block" href="single-product.html"><img class="mb-2"
+                      src="img/product/kaos.jpg" alt="" />
+                    <!-- Offer Countdown Timer: Please use event time this format: YYYY/MM/DD hh:mm:ss -->
+                  </a>
+                  <!-- Product Title --><a class="product-title d-block" href="single-product.html">Kaos Cotton 30s</a>
+                  <!-- Product Price -->
+                  <p class="sale-price text-dark">Rp. 100.000</p>
+                  <!-- Rating -->
+                  <div class="product-rating">
+                    <span><i class="lni lni-star-filled"></i> <span class="color-gray">4.0 | Sumedang</span></span>
+                  </div>
+                  <!-- Add to Cart -->
+                </div>
+              </div>
+            </div>
+            <!-- Single Top Product Card -->
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="card product-card">
+                <div class="card-body border border-secondary rounded">
+
+                  <!-- Wishlist Button--><a class="wishlist-btn" href="#"></a>
+                  <!-- Thumbnail --><a class="product-thumbnail d-block" href="single-product.html"><img class="mb-2"
+                      src="img/product/headphone.jpg" alt="" />
+                    <!-- Offer Countdown Timer: Please use event time this format: YYYY/MM/DD hh:mm:ss -->
+                  </a>
+                  <!-- Product Title --><a class="product-title d-block" href="single-product.html">Headphone Sony Ori</a>
+                  <!-- Product Price -->
+                  <p class="sale-price text-dark">Rp. 220.000</p>
+                  <!-- Rating -->
+                  <div class="product-rating">
+                    <span><i class="lni lni-star-filled"></i> <span class="color-gray">5.0 | Sumedang</span></span>
+                  </div>
+                  <!-- Add to Cart -->
+                </div>
+              </div>
+            </div>
+            <!-- Single Top Product Card -->
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="card product-card">
+                <div class="card-body border border-secondary rounded">
+
+                  <!-- Wishlist Button--><a class="wishlist-btn" href="#"></a>
+                  <!-- Thumbnail --><a class="product-thumbnail d-block" href="single-product.html"><img class="mb-2"
+                      src="img/product/sepatu.jpg" alt="" />
+                    <!-- Offer Countdown Timer: Please use event time this format: YYYY/MM/DD hh:mm:ss -->
+                  </a>
+                  <!-- Product Title --><a class="product-title d-block" href="single-product.html">Sepatu Sneaker</a>
+                  <!-- Product Price -->
+                  <p class="sale-price text-dark">Rp. 100.000</p>
+                  <!-- Rating -->
+                  <div class="product-rating">
+                    <span><i class="lni lni-star-filled"></i> <span class="color-gray">4.0 | Kotakaler</span></span>
+                  </div>
+                  <!-- Add to Cart -->
+                </div>
+              </div>
+            </div>
+            <!-- Single Top Product Card -->
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="card product-card">
+                <div class="card-body border border-secondary rounded">
+
+                  <!-- Wishlist Button--><a class="wishlist-btn" href="#"></a>
+                  <!-- Thumbnail --><a class="product-thumbnail d-block" href="single-product.html"><img class="mb-2"
+                      src="img/product/speaker.jpg" alt="" />
+                    <!-- Offer Countdown Timer: Please use event time this format: YYYY/MM/DD hh:mm:ss -->
+                  </a>
+                  <!-- Product Title --><a class="product-title d-block" href="single-product.html">Speaker Bluetooth</a>
+                  <!-- Product Price -->
+                  <p class="sale-price text-dark">Rp. 80.000</p>
+                  <!-- Rating -->
+                  <div class="product-rating">
+                    <span><i class="lni lni-star-filled"></i> <span class="color-gray">4.0 | Sumedang</span></span>
+                  </div>
+                  <!-- Add to Cart -->
+                </div>
+              </div>
+            </div>
+            <!-- Single Top Product Card -->
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="card product-card">
+                <div class="card-body border border-secondary rounded">
+
+                  <!-- Wishlist Button--><a class="wishlist-btn" href="#"></a>
+                  <!-- Thumbnail --><a class="product-thumbnail d-block" href="single-product.html"><img class="mb-2"
+                      src="img/product/jaket.jpg" alt="" />
+                    <!-- Offer Countdown Timer: Please use event time this format: YYYY/MM/DD hh:mm:ss -->
+                  </a>
+                  <!-- Product Title --><a class="product-title d-block" href="single-product.html">Jaket Hitam</a>
+                  <!-- Product Price -->
+                  <p class="sale-price text-dark">Rp. 150.000</p>
+                  <!-- Rating -->
+                  <div class="product-rating">
+                    <span><i class="lni lni-star-filled"></i> <span class="color-gray">4.0 | Sumedang</span></span>
+                  </div>
+                  <!-- Add to Cart -->
+                </div>
+              </div>
+            </div>
+            <!-- Single Top Product Card -->
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="card product-card">
+                <div class="card-body border border-secondary rounded">
+
+                  <!-- Wishlist Button--><a class="wishlist-btn" href="#"></a>
+                  <!-- Thumbnail --><a class="product-thumbnail d-block" href="single-product.html"><img class="mb-2"
+                      src="img/product/earphone.jpg" alt="" />
+                    <!-- Offer Countdown Timer: Please use event time this format: YYYY/MM/DD hh:mm:ss -->
+                  </a>
+                  <!-- Product Title --><a class="product-title d-block" href="single-product.html">Earphone 1More</a>
+                  <!-- Product Price -->
+                  <p class="sale-price text-dark">Rp. 70.000</p>
+                  <!-- Rating -->
+                  <div class="product-rating">
+                    <span><i class="lni lni-star-filled"></i> <span class="color-gray">4.0 | Sumedang</span></span>
+                  </div>
+                  <!-- Add to Cart -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cool Facts Area-->
+      <div class="cta-area">
+        <div class="container">
+          <div class="cta-text p-4 p-lg-5" style="background-image: url(img/bg-img/promo.jpeg)">
+            <h4 class="text-white">Promo 50% hanya hari ini</h4>
+            <p class="text-white">
+              Ayo borong!!!!!!<br />SEBELUM KEHABISAN
+            </p>
+            <a class="btn btn-warning" href="#">Belanja sekarang</a>
+          </div>
+        </div>
+      </div>
+      <!-- Weekly Best Sellers-->
+      <div class="weekly-best-seller-area py-3">
+        <div class="container">
+          <div class="section-heading d-flex align-items-center justify-content-between">
+            <h6>Terlaris minggu ini</h6>
+            <a class="btn" href="shop-list.html">Lihat semua</a>
+          </div>
+          <div class="row g-3">
+            <!-- Single Weekly Product Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card horizontal-product-card">
+                <div class="card-body border border-secondary rounded d-flex align-items-center">
+                  <div class="product-thumbnail-side">
+                    <!-- Badge --><span class="badge badge-warning">Terlaris</span>
+                    <!-- Wishlist Button --><a class="wishlist-btn" href="#"><i class="lni lni-heart"></i></a>
+                    <!-- Thumbnail --><a class="product-thumbnail d-block" href="single-product.html"><img
+                        src="img/product/basotahurafly.jpg" alt="" /></a>
+                  </div>
+                  <div class="product-description">
+                    <!-- Product Title --><a class="product-title d-block color-gray" href="single-product.html">Baso tahu kang Rafly</a>
+                    <!-- Price -->
+                    <p class="sale-price">
+                      Rp.10.000<span>Rp.15.000</span>
+                    </p>
+                    <!-- Rating -->
+                    <div class="product-rating">
+                      <span><i class="lni lni-star-filled"></i> <span class="color-gray">4.0 |
+                          Sumedang</span></span>
+                    </div>
+                    <!-- Buy Now Button --><a class="btn bg-main btn-sm text-white text-white" href="#"><i
+                        class="me-1 lni lni-cart"></i>Beli sekarang</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Single Weekly Product Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card horizontal-product-card">
+                <div class="card-body border border-secondary rounded d-flex align-items-center">
+                  <div class="product-thumbnail-side">
+                    <!-- Badge --><span class="badge badge-warning">Terlaris</span>
+                    <!-- Wishlist Button --><a class="wishlist-btn" href="#"><i class="lni lni-heart"></i></a>
+                    <!-- Thumbnail --><a class="product-thumbnail d-block" href="single-product.html"><img
+                        src="img/product/jaket.jpg" alt="" /></a>
+                  </div>
+                  <div class="product-description">
+                    <!-- Product Title --><a class="product-title d-block" href="single-product.html">Jaket Hitam</a>
+                    <!-- Price -->
+                    <p class="sale-price">
+                      Rp.150.000<span>Rp.190.000</span>
+                    </p>
+                    <!-- Rating -->
+                    <div class="product-rating">
+                      <span><i class="lni lni-star-filled"></i> <span class="color-gray">4.0 |
+                          Sumedang</span></span>
+                    </div>
+                    <!-- Buy Now Button --><a class="btn bg-main btn-sm text-white" href="#"><i
+                        class="me-1 lni lni-cart"></i>Beli sekarang</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Single Weekly Product Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card horizontal-product-card">
+                <div class="card-body border border-secondary rounded d-flex align-items-center">
+                  <div class="product-thumbnail-side">
+                    <!-- Badge --><span class="badge badge-warning">Terlaris</span>
+                    <!-- Wishlist Button --><a class="wishlist-btn" href="#"><i class="lni lni-heart"></i></a>
+                    <!-- Thumbnail --><a class="product-thumbnail d-block" href="single-product.html"><img
+                        src="img/product/earphone.jpg" alt="" /></a>
+                  </div>
+                  <div class="product-description">
+                    <!-- Product Title --><a class="product-title d-block" href="single-product.html">Earphone 1More</a>
+                    <!-- Price -->
+                    <p class="sale-price">
+                      Rp.70.000<span>Rp.100.000</span>
+                    </p>
+                    <!-- Rating -->
+                    <div class="product-rating">
+                      <span><i class="lni lni-star-filled"></i> <span class="color-gray">2.0 |
+                          Japanese</span></span>
+                    </div>
+                    <!-- Buy Now Button --><a class="btn bg-main btn-sm text-white" href="#"><i
+                        class="me-1 lni lni-cart"></i>Beli sekarang</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Discount Coupon Card-->
+      <div class="container">
+        <div class="card discount-coupon-card">
+          <div class="card-body border border-secondary bg-main-darker rounded">
+            <div class="coupon-text-wrap d-flex align-items-center p-3">
+              <h4 class="text-white pe-3 mb-0">
+                Dapatkan 20% <br>
+                DISKON
+              </h4>
+              <p class="text-white ps-3 mb-0">
+                Masukan kode <br><strong class="px-1">DICS20</strong><br> saat check-out barang anda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Featured Products Wrapper-->
+      <div class="featured-products-wrapper pt-3">
+        <div class="container">
+          <div class="section-heading d-flex align-items-center justify-content-between">
+            <h6>Produk Unggulan UMKM</h6>
+            <a class="btn" href="featured-products.html">Lihat semua</a>
+          </div>
+          <div class="row g-3">
+            <!-- Featured Product Card-->
+            <div class="col-6 col-lg-3">
+              <div class="card featured-product-card">
+                <div class="card-body border border-secondary rounded">
+                  <!-- Badge--><span class="badge badge-warning custom-badge"><i class="lni lni-star"></i></span>
+                  <div class="product-thumbnail-side">
+                    <!-- Wishlist Button -->
+                    <!-- <a class="wishlist-btn shadow-sm border" href="#"><i class="lni lni-heart"></i></a> -->
+                    <!-- Thumbnail --><a class="product-thumbnail d-block" href="single-product.html"><img
+                        src="img/product/naspad.jpg" alt="" /></a>
+                  </div>
+                  <div class="product-description">
+                    <!-- Product Title --><a class="product-title d-block" href="single-product.html">Nasi padang</a>
+                    <!-- Price -->
+                    <div class="d-flex flex-wrap">
+                      <p class="sale-price fsi-14">Rp.50.000</p><small><del>Rp.70.000</del></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Featured Product Card-->
+            <div class="col-6 col-lg-3">
+              <div class="card featured-product-card">
+                <div class="card-body border border-secondary rounded">
+                  <!-- Badge--><span class="badge badge-warning custom-badge"><i class="lni lni-star"></i></span>
+                  <div class="product-thumbnail-side">
+                    <!-- Wishlist Button -->
+                    <!-- <a class="wishlist-btn shadow-sm border" href="#"><i class="lni lni-heart"></i></a> -->
+                    <!-- Thumbnail --><a class="product-thumbnail d-block" href="single-product.html"><img
+                        src="img/product/basotahurafly.jpg" alt="" /></a>
+                  </div>
+                  <div class="product-description">
+                    <!-- Product Title --><a class="product-title d-block" href="single-product.html">Baso tahu kang Rafly</a>
+                    <!-- Price -->
+                    <div class="d-flex flex-wrap">
+                      <p class="sale-price fsi-14">Rp.50.000</p><small><del>Rp.70.000</del></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Featured Product Card-->
+            <div class="col-6 col-lg-3">
+              <div class="card featured-product-card">
+                <div class="card-body border border-secondary rounded">
+                  <!-- Badge--><span class="badge badge-warning custom-badge"><i class="lni lni-star"></i></span>
+                  <div class="product-thumbnail-side">
+                    <!-- Wishlist Button -->
+                    <!-- <a class="wishlist-btn shadow-sm border" href="#"><i class="lni lni-heart"></i></a> -->
+                    <!-- Thumbnail --><a class="product-thumbnail d-block" href="single-product.html"><img
+                        src="img/product/earphone.jpg" alt="" /></a>
+                  </div>
+                  <div class="product-description">
+                    <!-- Product Title --><a class="product-title d-block" href="single-product.html">Earphone 1More</a>
+                    <!-- Price -->
+                    <div class="d-flex flex-wrap">
+                      <p class="sale-price fsi-14">Rp.50.000</p><small><del>Rp.70.000</del></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Featured Product Card-->
+            <div class="col-6 col-lg-3">
+              <div class="card featured-product-card">
+                <div class="card-body border border-secondary rounded">
+                  <!-- Badge--><span class="badge badge-warning custom-badge"><i class="lni lni-star"></i></span>
+                  <div class="product-thumbnail-side">
+                    <!-- Wishlist Button -->
+                    <!-- <a class="wishlist-btn shadow-sm border" href="#"><i class="lni lni-heart"></i></a> -->
+                    <!-- Thumbnail --><a class="product-thumbnail d-block" href="single-product.html"><img
+                        src="img/product/kaos.jpg" alt="" /></a>
+                  </div>
+                  <div class="product-description">
+                    <!-- Product Title --><a class="product-title d-block" href="single-product.html">Kaos Cotton 30s</a>
+                    <!-- Price -->
+                    <div class="d-flex flex-wrap">
+                      <p class="sale-price fsi-14">Rp.50.000</p><small><del>Rp.70.000</del></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Internet Connection Status-->
+  <div class="internet-connection-status" id="internetStatus"></div>
+  <!-- Footer Nav-->
+  <div class="footer-nav-area" id="footerNav">
+    <div class="container h-100 px-0">
+      <div class="suha-footer-nav h-100 mx-auto">
+        <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+          <li>
+              <a class="d-flex flex-column" href="index.html"><i class='bx bx-home fsi-28  color-main-darker'></i><span class="color-main-darker">Beranda</span></a>
+          </li>
+          <li>
+              <a class="d-flex flex-column" href="index.html"><i class='bx bxs-news fsi-28'></i></i><span>Berita</span></a>
+          </li>
+          <li>
+              <a class="d-flex flex-column" href="chat.html"><i class='bx bx-conversation fsi-28'></i><span>Pesan</span></a>
+          </li>
+          <li>
+              <a class="d-flex flex-column" href="notify.html"><i class='bx bx-bell fsi-28' ></i><span>Notifikasi</span></a>
+          </li>
+          <li>
+              <a class="d-flex flex-column" href="profile-edit-form.html"><i class='bx bx-user-circle fsi-28' ></i><span>Akun</span></a>
+
+          </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <!-- All JavaScript Files-->
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.passwordstrength.js"></script>
+  <script src="js/dark-mode-switch.js"></script>
+  <script src="js/no-internet.js"></script>
+  <script src="js/active.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+
+</html>

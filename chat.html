@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no" />
+    <meta name="description" content="Suha - Multipurpose Ecommerce Mobile HTML Template" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#00a859" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- The above tags *must* come first in the head, any other head content must come *after* these tags-->
+    <!-- Title-->
+    <title>INGINAPA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Favicon-->
+    <link rel="icon" href="img/icons/icon-72x72.png" />
+    <!-- Apple Touch Icon-->
+    <link rel="apple-touch-icon" href="img/icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png" />
+    <!-- CSS Libraries-->
+    <link rel="stylesheet" href="css/bootstrap.min.css?v=1" />
+    <link rel="stylesheet" href="css/animate.css?v=1" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css?v=1" />
+    <link rel="stylesheet" href="css/font-awesome.min.css?v=1" />
+    <link rel="stylesheet" href="css/lineicons.min.css?v=1" />
+    <link rel="stylesheet" href="css/magnific-popup.css?v=1" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Web App Manifest-->
+    <link rel="manifest" href="manifest.json" />
+    <!-- Custom style -->
+    <style>
+        .content-wrapper {
+            position: relative;
+        }
+
+        .nav-chat-info {
+            height: 59px;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 99999;
+        }
+
+        .footer-nav {
+            height: 60px;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .chat-selector {
+            width: 30%;
+            height: 100vh;
+            padding-bottom: 20px;
+        }
+
+        .chat-header-area {
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            background-color: #ffffff;
+            width: 30%;
+            height: 60px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 99;
+        }
+
+        .chat-conversation {
+            height: 100vh;
+            background-color: transparent !important;
+            right: 0;
+            position: relative;
+            z-index: 99;
+        }
+
+        .footer-nav-area {
+            width: 30% !important;
+            box-shadow: none;
+        }
+
+        .chat-list {
+            height: 80px;
+            color: #444444;
+            background-color: #ffffff;
+            width: 100%;
+            border: 1px solid #d5d5d5 !important;
+            border-radius: .25rem !important;
+            margin-top: .6rem !important
+        }
+
+        .chat-list:hover {
+            color: #444444;
+        }
+
+        .recent-chat {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .profile-img {
+            width: 60px;
+        }
+
+        .prof-img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .tap-hidden {
+            height: 40px;
+            width: 150px;
+        }
+
+        .chat {
+            height: 100vh;
+        }
+
+        .chat-src {
+            height: 35px !important;
+        }
+
+        .chat-type {
+            height: 40px !important;
+        }
+
+        .btn-send {
+            width: 35px;
+            height: 35px;
+            margin-left: 0px;
+        }
+
+        .support-wrapper {
+            z-index: -1;
+        }
+
+        @media only screen and (max-width: 600px) {
+            html {
+                background-color: rgba(84, 198, 72, 0.1);
+            }
+
+            .chat-header-area {
+                width: 100%;
+                background-color: #1E7C14;
+            }
+
+            .chat-selector {
+                width: 100%;
+                background-color: rgba(84, 198, 72, 0.1);
+            }
+
+            .chat-conversation {
+                width: 100%;
+                position: relative !important;
+            }
+
+            .chat-aite div span:nth-child(1) {
+                font-size: 14px !important;
+            }
+
+            .chat-aite div span:nth-child(2) {
+                font-size: 12px !important;
+            }
+
+            .profile-img {
+                width: 35px;
+                height: 35px;
+            }
+
+            .nav-chat-info {
+                width: 100%;
+            }
+            .friend-info{
+                width: 80%;
+            }
+            .back-arrow{
+                padding-left: 15px !important;
+                padding-right: 0 !important;
+            }
+            .footer-nav {
+                width: 100%;
+            }
+
+            .footer-nav-area {
+                width: 100% !important;
+            }
+
+            .support-wrapper {
+                z-index: -1;
+                background-color: rgba(84, 198, 72, 0.1);
+            }
+
+            .bxs-dashboard {
+                color: #ffffff !important;
+            }
+
+            .bxs-cart {
+                color: #ffffff !important;
+            }
+
+            .btn-send {
+                margin-left: 10px;
+            }
+
+            .hidden {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader-->
+    <div class="preloader" id="preloader">
+        <div class="spinner-grow text-secondary" role="status">
+            <div class="sr-only">Loading...</div>
+        </div>
+    </div>
+    <!-- PWA Install Alert -->
+    <div class="toast pwa-install-alert shadow bg-white" role="alert" aria-live="assertive" aria-atomic="true"
+        data-bs-delay="10000" data-bs-autohide="true"></div>
+
+    <div class="chat-wrapper d-flex w-100 h-100">
+        <!-- Sisi kiri chat selector -->
+        <!-- For hidden -->
+        <div class="chat-selector hidden border border-bottom-0">
+            <!-- Header Area-->
+            <div class="chat-header-area border border-right" id="headerArea">
+                <div class="headbar wd-90 h-100 d-flex align-items-center justify-content-between mx-auto">
+                    <!-- Back To home Button-->
+                    <form class="searching-bar border border-secondary rounded d-flex align-items-center bg-white"
+                        action="">
+                        <input class="bg-young-gray fsi-14 w-100 h-100 ps-5 pe-2 border-0" type="text"
+                            placeholder="Cari pesan...." />
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <!-- Navbar Toggler-->
+                    <div class="toggler wd-10 h-100 d-flex align-items-center justify-content-around">
+                        <div class="dropdown show">
+                          <a class="btn btn-white p-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class='bx bxs-dashboard fsi-32 text-dark'></i>
+                          </a>
+                          <div class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="catagory.html">Elektronik</a>
+                            <a class="dropdown-item" href="catagory.html">Buah dan Sayur</a>
+                            <a class="dropdown-item" href="catagory.html">Otomotif</a>
+                            <a class="dropdown-item" href="catagory.html">Kerajinan</a>
+                          </div>
+                        </div>
+                        <a href="keranjang.html">
+                          <i class='bx bxs-cart fsi-32 text-dark'></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+            <!-- Content -->
+            <div class="content-wrapper d-flex flex-column wd-90 h-100 mx-auto py-5 mt-3">
+                <a href="" class="chat-list">
+                    <div class="d-flex wd-95 h-100 mx-auto">
+                        <div class="prof-img py-4 mx-2">
+                            <img src="icons/PNG/icons-user.png" class="relative rounded-full">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center wd-65 h-100 px-2">
+                            <span class="fw-semibold fsi-16 text-dark">Asep</span>
+                            <span class="recent-chat fsi-14 mt-1">Ngab nnti lebaran qurban ga? saya punya banteng nih
+                                mau beli ga?</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center wd-15 h-100">
+                            <span class="fsi-14">8 Jul</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Chat list -->
+                <a href="" class="chat-list">
+                    <div class="d-flex wd-95 h-100 mx-auto">
+                        <div class="prof-img py-4 mx-2">
+                            <img src="icons/PNG/icons-user.png" class="relative rounded-full">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center wd-65 h-100 px-2">
+                            <span class="fw-semibold fsi-16 text-dark">Agus</span>
+                            <span class="recent-chat fsi-14 mt-1">Hmmm... pageto paling</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center wd-15 h-100">
+                            <span class="fsi-14">8 Jul</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- end chatlist -->
+            </div>
+            <!-- /Content -->
+            <!-- Internet Connection Status-->
+            <div class="internet-connection-status" id="internetStatus"></div>
+            <!-- Footer Chat selector (Regular Footer)-->
+            <div class="footer-nav-area bg-white border border-secondary" id="footerNav">
+                <div class="container h-100 px-0">
+                    <div class="suha-footer-nav h-100 mx-auto">
+                        <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+                            <li>
+                                <a class="d-flex flex-column" href="index.html"><i
+                                        class='bx bx-home fsi-28'></i><span>Beranda</span></a>
+                            </li>
+                            <li>
+                                <a class="d-flex flex-column" href="index.html"><i
+                                        class='bx bxs-news fsi-28'></i></i><span>Berita</span></a>
+                            </li>
+                            <li>
+                                <a class="d-flex flex-column" href="chat.html"><i
+                                        class='bx bx-conversation fsi-28 color-main-darker'></i><span
+                                        class="color-main-darker">Pesan</span></a>
+                            </li>
+                            <li>
+                                <a class="d-flex flex-column" href="notify.html"><i
+                                        class='bx bx-bell fsi-28'></i><span>Notifikasi</span></a>
+                            </li>
+                            <li>
+                                <a class="d-flex flex-column" href="profile-edit-form.html"><i
+                                        class='bx bx-user-circle fsi-28'></i><span>Akun</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Sisi kanan Side chat conversation -->
+        <!-- For hidden -->
+        <div class="chat-conversation wd-70 h-100">
+            <nav class="nav-chat-info d-flex align-items-center bg-white border border-secondary wd-70 ">
+                <button onclick="goBack()" class="back-arrow bg-white border-0 wd-5 px-5">
+                    <i class='bx bx-left-arrow-alt color-gray fsi-26 mt-1'></i>
+                </button>
+                <div class="friend-info d-flex wd-88 align-items-center justofy-content-between mx-auto">
+                    <div class="chat-aite d-flex wd-90 align-items-center">
+                        <div class="prof-img">
+                            <img src="icons/PNG/icons-user.png" class="relative rounded-full">
+                        </div>
+                        <div class="d-flex flex-column ms-3 hg-80 my-auto">
+                            <span class="fsi-16 text-dark fw-semibold">Agus</span>
+                            <span class="fsi-14 color-main">online</span>
+                        </div>
+                    </div>
+                    <div class="wd-10 d-flex justify-content-center align-items-center">
+                        <i class='bx bx-filter fsi-32 color-gray'></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="chat w-100 h-100 d-flex flex-column align-items-center justify-content-start">
+                <div class="support-wrapper w-100">
+                    <div class="container w-100">
+                        <!-- Live Chat Wrapper-->
+                        <div class="live-chat-wrapper mt-5 py-4 mb-5">
+                            <!-- Agent Message Content-->
+                            <div class="agent-message-content d-flex align-items-start">
+                                <!-- Agent Message Text-->
+                                <div class="agent-message-text">
+                                    <div
+                                        class="d-flex flex-column border border-secondary bg-white shadow-sm px-3 py-2 mb-2 w-100">
+                                        <span>Hi ngabs</span>
+                                        <span class="mt-1">12:36</span>
+                                    </div>
+                                    <div
+                                        class="d-flex flex-column border border-secondary bg-white shadow-sm px-3 py-2 mb-2 w-100">
+                                        <span>Ada yang bisa engabs bantos?</span>
+                                        <span class="mt-1">12:36</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- User Message Content-->
+                            <div class="user-message-content">
+                                <!-- User Message Text-->
+                                <div class="user-message-text d-flex justify-content-end">
+                                    <div class=" border border-secondary bg-white shadow-sm px-3 py-2 mb-2">
+                                        <span>oh iya kah?</span>
+                                        <span class="mt-1">12:36</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Agent Message Content-->
+                            <div class="agent-message-content d-flex align-items-start">
+                                <!-- Agent Message Text-->
+                                <div class="agent-message-text">
+                                    <div
+                                        class="d-flex flex-column border border-secondary bg-white shadow-sm px-3 py-2 mb-2">
+                                        <span>Hmmm... pageto paling</span>
+                                        <span class="mt-1">12:36</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end agent message -->
+                            <!-- Agent Message Content-->
+                            <div class="agent-message-content d-flex align-items-start">
+                                <!-- Agent Message Text-->
+                                <div class="agent-message-text">
+                                    <div
+                                        class="d-flex flex-column border border-secondary bg-white shadow-sm px-3 py-2 mb-2">
+                                        <span>Sow we ke dikabaran deui</span>
+                                        <span class="mt-1">12:36</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end agent message -->
+                            <!-- Agent Message Content-->
+                            <div class="agent-message-content d-flex align-items-start">
+                                <!-- Agent Message Text-->
+                                <div class="agent-message-text">
+                                    <div
+                                        class="d-flex flex-column border border-secondary bg-white shadow-sm px-3 py-2 mb-2">
+                                        <span>Mun hnte ditenggeul ku abi</span>
+                                        <span class="mt-1">12:36</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end agent message -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Prototype Start Massage -->
+            <!-- <div class="tap-hidden-wrap w-100 h-100 d-flex align-items-center justify-content-center">
+        <button class="tap-hidden rounded bg-main-darker fsi-14 text-white border-0">
+            Mulai percakapan
+        </button>
+    </div> -->
+
+            <!-- Ketikan -->
+            <div class="footer-nav wd-70 bg-white border border-secondary">
+                <form action="" class="w-100 h-100">
+                    <div class="d-flex wd-90 h-100 justify-content-between align-items-center mx-auto ">
+                        <input type="text" class="form-control chat-type wd-90 fsi-14 rounded border border-secondary "
+                            placeholder="Ketikan pesan....">
+                        <button type="submit" class="btn-send border-0 bg-white d-flex align-items-center"><i
+                                class='bx bx-send fsi-30 mx-auto color-main-darker mt-1'></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- All JavaScript Files-->
+    <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.passwordstrength.js"></script>
+  <script src="js/dark-mode-switch.js"></script>
+  <script src="js/no-internet.js"></script>
+  <script src="js/active.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no">
+  <meta name="description" content="Suha - Multipurpose Ecommerce Mobile HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#100DD1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- The above tags *must* come first in the head, any other head content must come *after* these tags-->
+  <!-- Title-->
+  <title>Suha - Multipurpose Ecommerce Mobile HTML Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+    rel="stylesheet">
+  <!-- Favicon-->
+  <link rel="icon" href="img/icons/icon-72x72.png">
+  <!-- Apple Touch Icon-->
+  <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+  <!-- CSS Libraries-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/lineicons.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Stylesheet-->
+  <link rel="stylesheet" href="style.css">
+  <!-- Web App Manifest-->
+  <link rel="manifest" href="manifest.json">
+  <!-- Custom Style -->
+  <style>
+    .star span {
+      margin-top: 2px;
+    }
+
+    .description span {
+      font-size: 14px;
+      margin-top: 6px;
+    }
+
+    .trx-btn a {
+      height: 45px;
+    }
+
+    .seller {
+      height: 150px;
+    }
+
+    .seller img {
+      margin-left: 20px;
+    }
+
+    .mise-desc {
+      margin-left: 30px;
+      margin-top: -10px;
+      height: 90px;
+    }
+
+    .mise-btn {
+      width: 220px;
+      height: 35px;
+    }
+
+    .mise-btn img {
+      margin-left: 0px
+    }
+
+    .product-rev img {
+      height: 60px;
+    }
+
+    .review-pic img {
+      height: 80px;
+      margin-right: 10px;
+    }
+
+    .other-slide .col {
+      height: 300px;
+      margin-right: 20px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      .page-content-wrapper{
+        margin-top: 80px !important;
+      }
+      .main-pic {
+        width: 100%;
+      }
+
+      .prev-pic {
+        width: 100%;
+      }
+
+      .product-name {
+        font-size: 20px;
+        margin-top: 30px;
+      }
+
+      .rate {
+        width: 100%
+      }
+
+      .price span {
+        font-size: 30px
+      }
+      .variation{
+        width: 100% !important;
+        flex-direction: column;
+      }
+      .trx-btn {
+        width: 100%;
+      }
+
+      .trx-btn a:nth-child(1) {
+        width: 58%;
+      }
+
+      .mise-btn {
+        width: 165px;
+        font-size: 10px;
+      }
+
+      .title>.star {
+        width: 35%;
+      }
+
+      .review-desc span:nth-child(3) {
+        font-size: 13px;
+      }
+
+      .review-pic img {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader-->
+  <div class="preloader" id="preloader">
+    <div class="spinner-grow text-secondary" role="status">
+      <div class="sr-only">Loading...</div>
+    </div>
+  </div>
+  <!-- Header Area-->
+  <div class="header-area shadow-sm" id="headerArea">
+    <div class="topbar w-100 bg-young-gray">
+      <div class="container d-flex justify-content-between align-items-center h-100">
+        <div class="topbar-menu wd-9 d-flex justify-content-between">
+          <img src="icons/SVG/Downloadapp.svg" width="13px"><a>Download App</a>
+        </div>
+        <div class="topbar-menu wd-30 d-flex justify-content-between ">
+          <a>TentangInginapa</a>
+          <a>InginMitra</a>
+          <a>InginJualan?</a>
+          <a>Promo</a>
+          <a>InginSentre</a>
+        </div>
+      </div>
+    </div>
+    <div class="headbar wd-90 hg-70 d-flex align-items-center justify-content-between mx-auto">
+      <!-- Back To home Button-->
+      <div class="logo-wrapper wd-10">
+        <a href="index.html"><img src="icons/SVG/logo-inginapa.svg" width="100px" /></a>
+      </div>
+      <button onclick="goBack()" class="back-arrow d-md-none bg-main-darker border-0">
+        <i class='bx bx-left-arrow-alt text-white fsi-26 mt-1'></i>
+    </button>
+      <form class="searching-bar border border-secondary rounded d-flex align-items-center" action="">
+        <a href="searching-bar.html" class="w-100 h-100"><input
+            class="bg-young-gray fsi-14 w-100 h-100 ps-5 pe-2 border-0" type="text"
+            placeholder="Cari sesuatu...." /></a>
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <!-- Navbar Toggler-->
+      <div class="toggler wd-10 h-100 d-flex align-items-center justify-content-around">
+        <div class="dropdown show">
+          <a class="btn btn-white p-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class='bx bxs-dashboard fsi-32 text-dark'></i>
+          </a>
+          <div class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="catagory.html">Elektronik</a>
+            <a class="dropdown-item" href="catagory.html">Buah dan Sayur</a>
+            <a class="dropdown-item" href="catagory.html">Otomotif</a>
+            <a class="dropdown-item" href="catagory.html">Kerajinan</a>
+          </div>
+        </div>
+        <a href="keranjang.html">
+          <i class='bx bxs-cart fsi-32 text-dark'></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Content -->
+  <div class="page-content-wrapper w-100 h-100 mx-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <img class="main-pic wd-85" src="img/product/headphone.jpg">
+          <div class="prev-pic wd-85 d-flex justify-content-between mt-4">
+            <img src="img/product/headphone.jpg" width="22%">
+            <img src="img/product/headphone.jpg" width="22%">
+            <img src="img/product/headphone.jpg" width="22%">
+            <img src="img/product/headphone.jpg" width="22%">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h4 class="product-name fsi-24 fw-bold">Headphone</h4>
+          <div class="rate wd-70 fsi-14 d-flex justify-content-between mt-3">
+            <div class="star wd-35 d-flex justify-content-between">
+              <span class="color-main">4.2</span>
+              &nbsp;
+              <a href=""><img src="icons/SVG/Star 6.svg"></a>
+              <a href=""><img src="icons/SVG/Star 6.svg"></a>
+              <a href=""><img src="icons/SVG/Star 6.svg"></a>
+              <a href=""><img src="icons/SVG/Star 6.svg"></a>
+              <a href=""><img src="icons/SVG/Star 6.svg"></a>
+            </div>
+            <div><span class="color-main">200+</span> Penilaian</div>
+            <div><span class="color-main">900+</span> Terjual</div>
+          </div>
+          <div class="price d-flex flex-column mt-3">
+            <del class="fsi-16">Rp.1000.000</del>
+            <span class="color-main fsi-36">Rp.900.000</span>
+          </div>
+          <div class="description d-flex flex-column mt-3">
+            <h5 class="fw-semibold">Informasi Produk</h5>
+            <span>Kondisi : Baik banggat</span>
+            <span>Berat : 1 kg</span>
+            <span>Kategori : Elektronik</span>
+            <span>Etalase : Aksesoris</span>
+            <p class="fw-bold mt-1">Deskripsi :</p>
+            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod ullam voluptatum rerum,
+              assumenda cum, delectus asperiores, repudiandae aspernatur perferendis ratione nobis commodi tempore
+              exercitationem libero omnis suscipit recusandae eum.</span>
+            <span>Lorem, ipsum.</span>
+          </div>
+          <div class="variation d-flex flex-column justify-content-between py-3">
+            <div class="w-50">
+              <select name="variation" id="variation" class="form-control text-center">
+                <option value="#">-- Pilih Variasi --</option>
+                <option value="original">Original</option>
+                <option value="pedas">Pedas</option>
+                <option value="pedasbanget">Pedas banggat</option>
+              </select>
+            </div>
+            <div class="wd-50 mt-2"> 
+              <label class="fsi-16 color-gray mb-1" for="qty">Jumlah Pesanan</label>
+              <input type="number" name="qty" id="qty" class="form-control text-center w-50" value="1">
+            </div>
+          </div>
+          <div class="trx-btn wd-70 d-flex justify-content-between">
+            <a class="btn wd-55 color-main border-main fw-semibold d-flex justify-content-around align-items-center mt-2"
+              href="#"><img src="icons/SVG/Cart+.svg" width="25px">Masukan keranjang</a>
+            <a class="btn wd-40 bg-main border-main fw-semibold d-flex justify-content-center align-items-center text-white mt-2"
+              href="checkout-form.html">Beli sekarang</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-12 seller bg-young-gray rounded d-flex align-items-center">
+          <img src="img/product/basotahurafly.jpg" width="90px" class="rounded-circle">
+          <div class="mise-desc d-flex flex-column justify-content-around w-75">
+            <span class="fsi-18 color-gray fw-bold">Toko RaflyKun</span>
+            <span class="fsi-14">Aktif 1 hari yang lalu</span>
+            <div class="mise-btn fs-16 d-flex justify-content-between mt-2">
+              <a href="chat.html"
+                class="wd-40 bg-soft-green border-main fw-semibold d-flex justify-content-center align-items-center"><img
+                  src="icons/SVG/Chat.svg" width="18px"><span class="fsi-12 color-gray offset-1">Chat</span></a>
+              <a href="shop.html"
+                class="wd-55 bg-soft-green border-main fw-semibold d-flex justify-content-center align-items-center"><img
+                  src="icons/SVG/Mise.svg"><span class="fsi-12 color-gray offset-1">Kunjungi</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row mx-auto">
+      <div class="col col-lg-7 col-sm-12 review h-100">
+        <div class="title">
+          <span class="fs-4 text-dark fw-semibold">Ulasan Produk (100)</span>
+          <div class="star wd-22 d-flex justify-content-between mt-2 mb-5">
+            <span class="color-main">4.2</span>
+            &nbsp;
+            <a href=""><img src="icons/SVG/Star 6.svg"></a>
+            <a href=""><img src="icons/SVG/Star 6.svg"></a>
+            <a href=""><img src="icons/SVG/Star 6.svg"></a>
+            <a href=""><img src="icons/SVG/Star 6.svg"></a>
+            <a href=""><img src="icons/SVG/Star 6.svg"></a>
+          </div>
+        </div>
+        <!-- Single review product -->
+        <div class="product-rev d-flex">
+          <img src="img/product/basotahurafly.jpg" width="60px" class="rounded-circle">
+          <div class="review-desc offset-1 d-flex flex-column justify-content-between">
+            <span class="fsi-16 text-dark fw-bold">Ahid yete</span>
+            <span class="fsi-12">1 hari yang lalu</span>
+            <span class="fsi-14 mt-2 mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, delectus
+              itaque, voluptas nulla aspernatur repudiandae excepturi, eveniet qui facere ipsa corrupti omnis. Similique
+              aspernatur repellat dolores facilis id inventore modi.</span>
+          </div>
+        </div>
+        <!-- end of review -->
+        <!-- Single review product -->
+        <div class="product-rev d-flex mb-3">
+          <img src="img/product/basotahurafly.jpg" width="60px" class="rounded-circle">
+          <div class="review-desc offset-1 d-flex flex-column justify-content-between">
+            <span class="fsi-16 text-dark fw-bold">Ahid yete</span>
+            <span class="fsi-12">1 hari yang lalu</span>
+            <span class="fsi-14 mt-2 mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, delectus
+              itaque, voluptas nulla aspernatur repudiandae excepturi, eveniet qui facere ipsa corrupti omnis. Similique
+              aspernatur repellat dolores facilis id inventore modi.</span>
+            <div class="review-pic">
+              <img src="img/product/basotahurafly.jpg" width="80px" class="rounded">
+              <img src="img/product/basotahurafly.jpg" width="80px" class="rounded">
+              <img src="img/product/basotahurafly.jpg" width="80px" class="rounded">
+              <img src="img/product/basotahurafly.jpg" width="80px" class="rounded">
+            </div>
+          </div>
+        </div>
+        <!-- end review -->
+        <!-- Single review product -->
+        <div class="product-rev d-flex">
+          <img src="img/product/basotahurafly.jpg" width="60px" class="rounded-circle">
+          <div class="review-desc offset-1 d-flex flex-column justify-content-between">
+            <span class="fsi-16 text-dark fw-bold">Ahid yete</span>
+            <span class="fsi-12">1 hari yang lalu</span>
+            <span class="fsi-14 mt-2 mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, delectus
+              itaque, voluptas nulla aspernatur repudiandae excepturi, eveniet qui facere ipsa corrupti omnis. Similique
+              aspernatur repellat dolores facilis id inventore modi.</span>
+          </div>
+        </div>
+        <!-- end of review -->
+        <!-- Single review product -->
+        <div class="product-rev d-flex">
+          <img src="img/product/basotahurafly.jpg" width="60px" class="rounded-circle">
+          <div class="review-desc offset-1 d-flex flex-column justify-content-between">
+            <span class="fsi-16 text-dark fw-bold">Ahid yete</span>
+            <span class="fsi-12">1 hari yang lalu</span>
+            <span class="fsi-14 mt-2 mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, delectus
+              itaque, voluptas nulla aspernatur repudiandae excepturi, eveniet qui facere ipsa corrupti omnis. Similique
+              aspernatur repellat dolores facilis id inventore modi.</span>
+          </div>
+        </div>
+        <!-- end of review -->
+        <!-- view more button -->
+        <div class="mt-3">
+          <a href="" class="fsi-14 color-main-darker border-bottom">Tampilkan lebih banyak</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="related-product-wrapper py-3 mb-5 mt-4">
+    <div class="container">
+      <div class="other d-flex align-items-center justify-content-between mb-4">
+        <span class="fsi-18 fw-bold text-dark">Produk lain ditoko ini</span><a class="fsi-14 color-main"
+          href="shop.html">Lihat lainnya</a>
+      </div>
+      <div class="related-product-slide owl-carousel">
+        <div class="single-related-product-slide">
+          <div class="card product-card">
+            <div class="card-body">
+              <a class="product-thumbnail d-block" href="single-product.html"><img class="mb-2"
+                  src="img/product/basotahurafly.jpg" alt="" />
+              </a>
+              <a class="product-title d-block" href="single-product.html">Baso tahu kang Rafly</a>
+              <p class="sale-price text-dark">Rp. 15.000</p>
+              <div class="product-rating">
+                <span><i class="lni lni-star-filled"></i> <span class="color-gray">4.0 | Sumedang</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="single-related-product-slide">
+          <div class="card product-card">
+            <div class="card-body">
+              <a class="product-thumbnail d-block" href="single-product.html"><img class="mb-2"
+                  src="img/product/naspad.jpg" alt="" />
+              </a>
+              <a class="product-title d-block" href="single-product.html">Nasi Padang</a>
+              <p class="sale-price text-dark">Rp. 15.000</p>
+              <div class="product-rating">
+                <span><i class="lni lni-star-filled"></i> <span class="color-gray">4.0 | Sumedang</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="single-related-product-slide">
+          <div class="card product-card">
+            <div class="card-body">
+              <a class="product-thumbnail d-block" href="single-product.html"><img class="mb-2"
+                  src="img/product/basoahmad.png" alt="" />
+              </a>
+              <a class="product-title d-block" href="single-product.html">Mie ayam kang
+                ahmad</a>
+              <p class="sale-price text-dark">Rp. 15.000</p>
+              <div class="product-rating">
+                <span><i class="lni lni-star-filled"></i> <span class="color-gray">4.0 | Sumedang</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- /Content -->
+  <!-- Internet Connection Status-->
+  <div class="internet-connection-status" id="internetStatus"></div>
+  <!-- Footer Nav-->
+  <div class="footer-nav-area" id="footerNav">
+    <div class="container h-100 px-0">
+      <div class="suha-footer-nav h-100 mx-auto">
+        <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+          <li>
+              <a class="d-flex flex-column" href="index.html"><i class='bx bx-home fsi-28'></i><span>Beranda</span></a>
+          </li>
+          <li>
+              <a class="d-flex flex-column" href="index.html"><i class='bx bxs-news fsi-28'></i></i><span>Berita</span></a>
+          </li>
+          <li>
+              <a class="d-flex flex-column" href="chat.html"><i class='bx bx-conversation fsi-28'></i><span>Pesan</span></a>
+          </li>
+          <li>
+              <a class="d-flex flex-column" href="notify.html"><i class='bx bx-bell fsi-28' ></i><span>Notifikasi</span></a>
+          </li>
+          <li>
+              <a class="d-flex flex-column" href="profile-edit-form.html"><i class='bx bx-user-circle fsi-28' ></i><span>Akun</span></a>
+
+          </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <!-- All JavaScript Files-->
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.passwordstrength.js"></script>
+  <script src="js/dark-mode-switch.js"></script>
+  <script src="js/no-internet.js"></script>
+  <script src="js/active.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+
+</html>
